@@ -18,7 +18,7 @@ Navbar.ListItem = function NavbarListItem({ children, ...restProps}) {
     )
 }
 
-Navbar.NavbarIcon = function NavbarIcon({ children, ...restProps}) {
+Navbar.NavbarIcon = function NavbarNavbarIcon({ children, ...restProps}) {
     return (
         <NavbarIcon{...restProps}>
             {children}

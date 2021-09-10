@@ -3,12 +3,13 @@ import { theme } from "../GlobalStyle";
 
 export const Container = styled.div` 
     background: #fff;
-    display: -webkit-inline-box;
+    display: -webkit-box;
+    margin: 10px 20px -5px 20px;
 
-    @media (min-width: 375px){
+    @media (min-width: 376px){
         padding: '20px 50px';
         background: #fff;
-        display: flex;
+        display: flex; 
         padding: 15px 30px;
         justify-content: space-around;
     }
@@ -16,9 +17,10 @@ export const Container = styled.div`
 
 export const ListItem = styled.ul`
     /* flex-direction: row; */
+    display: none;
     list-style: none;
 
-    @media (min-width: 375px){
+    @media (min-width: 376px){
         display: flex;
         flex-direction: column;
         list-style: none; 
@@ -27,7 +29,7 @@ export const ListItem = styled.ul`
     @media (max-width: 1920px){
         flex-direction: row;
     }
-
+ 
 `;
 
 export const Item = styled.li`
@@ -42,10 +44,10 @@ export const Item = styled.li`
 
 export const NavbarIcon = styled.div`
     width: 15px;
-    height: 5px;
+    height: 15px;
     background-color: ${ theme.color.lightOrange };
 
-    @media (min-width: 375px){
+    @media (min-width: 376px){
         display: none
     }
 `

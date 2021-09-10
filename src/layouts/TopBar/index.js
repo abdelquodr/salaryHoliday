@@ -14,20 +14,25 @@ const TopBar = () => {
     return (
         <Navbar>
             <Navbar.Logo src={ Logo } />
-            <Navbar.ListItem>            
+            <ul style={{ display: 'flex', listStyle: 'none'}}>            
                 <Navbar.Item>   
                 <img src={ phone } style={{ bottom: -5}} alt="phone" /> 0703-853-4829 
-                </Navbar.Item>              
-            </Navbar.ListItem>
-            <Navbar.NavbarIcon />
+                </Navbar.Item>   
+                <Navbar.NavbarIcon />           
+            </ul>
+            
             <Navbar.ListItem>
-               { list.map((each, ind) => <Navbar.Item key={ ind + each }> { each } </Navbar.Item> )}
-            </Navbar.ListItem>
+                <Navbar.ListItem>
+                { list.map((each, ind) => <Navbar.Item key={ ind + each }> { each } </Navbar.Item> )}
+                </Navbar.ListItem>
 
-            <Navbar.ListItem >
-                <Navbar.Item> Log In </Navbar.Item>             
+                <Navbar.ListItem >
+                    <Navbar.Item> Log In </Navbar.Item> 
+                    <CustomButton children="Create Account" />            
+                </Navbar.ListItem>
             </Navbar.ListItem>
-            <CustomButton children="Create Account" />
+           
+            {/* <CustomButton children="Create Account" /> */}
         </Navbar>
     )
 }

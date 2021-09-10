@@ -4,15 +4,30 @@ import { theme } from "../GlobalStyle";
 
 export const Container = styled.div`
     display: flex;
-    margin: 70px 0;
-    /* justify-content: center; */
-    padding: ${ theme.body.space }
+    padding: 20px;
+    margin: 30px 0px;
+
+    @media(min-width: 376px){
+        display: flex;
+        margin: 70px 0;
+        padding: ${ theme.body.space }
+    }
 `
 
 
 export const Card = styled.div`
-    display: flex; 
-    justify-content: space-between;
+    display: block;
+    margin: 0 10px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    text-align: center;
+    
+    @media( min-width: 376px){
+        /* display: flex;  */
+       justify-content: space-between;
+    }
 `
 
 export const Icon = styled.img`
@@ -22,34 +37,43 @@ export const Icon = styled.img`
     Top: 1008px;
     Left: 125px;
     Opacity: 40%;
+
+    @media(min-width: 376){
+        display: flex
+    }
 ` 
 
 export const Header = styled.h6`
-    /* position: absolute;
-    width: 133px;
-    height: 32px;
-    left: 242px;
-    top: 1001px; */
     margin: 0;
-    /* font-family: Public Sans; */
     font-style: normal;
     font-weight: 600;
-    font-size: ${ theme.font.fontSmall };
+    font-size: 14px;
     line-height: 32px;
+
+    @media(min-width){
+        font-style: normal;
+        font-weight: 600;
+        font-size: ${ theme.font.fontSmall };
+        line-height: 32px;
+    }
 `
 
 export const Text = styled.p`
-    /* position: absolute;
-    width: 220px;
-    height: 56px;
-    left: 669px;
-    top: 1048px; */
-    margin: 0;
-    color: ${ theme.color.black };
-    /* font-family: Public Sans; */
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 10px;
+    line-height: 12px;
     opacity: 0.7;
+
+    @media(min-width: 376px){
+        color: ${ theme.color.black };
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        opacity: 0.7;
+    }
 `
+    
+ 
+   

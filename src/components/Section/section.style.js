@@ -3,11 +3,16 @@ import { theme } from "../GlobalStyle";
 
 
 export const Container = styled.div`
-    display: grid;
-    grid-template-columns: 50% 50px 50%;
-    grid-template-rows: 1fr;
-    height: 600px;
-    padding: ${ theme.body.space }
+    display: block;
+    padding: 0 40px;    
+
+    @media(min-width: 376px){
+        display: grid;
+        grid-template-columns: 50% 50px 50%;
+        grid-template-rows: 1fr;
+        height: 600px;
+        padding: ${ theme.body.space }
+    }
 ` 
 
 export const Section = styled.div`
@@ -21,8 +26,16 @@ export const SectionB = styled.div`
 export const Header = styled.h2`
     font-style: normal;
     font-weight: bold;
-    font-size: ${ theme.font.fontLarge };
-    line-height: 58px;   
+    font-size: 23px;
+    line-height: 33px;
+
+    @media(min-width: 376px){
+        font-style: normal;
+        font-weight: bold;
+        font-size: ${ theme.font.fontLarge };
+        line-height: 58px
+    }
+  ;   
 `
 
 export const Text = styled.p`
@@ -35,7 +48,7 @@ export const Text = styled.p`
     opacity: 0.7;
 `
 
-export const TinyCard = styled. div`
+export const TinyCard = styled.div`
     display: flex;
     width: 240px;
     padding: 12px;

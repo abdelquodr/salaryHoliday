@@ -1,38 +1,139 @@
-/* .App {
-  text-align: center;
-}
+  /* .App {
+    text-align: center;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
   }
-} */
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+
+
+  .about_header{
+    padding: 20px 48px;
+    font-family: Public Sans;
+  }
+
+  .about_header__header{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center
+  }
+
+  .about_header__header ~ p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: inherit;
+  } 
+
+  .paragraph{
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: left;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  .section{
+    padding: 40px;
+    font-family: Public Sans;
+  }
+
+  .provide_header{
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 29px;
+  }
+
+  .bold_header{
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    color: #fff;
+  }
+
+  .let_talk{
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .let_talk__info{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    font-family: Public sans;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+
+  .trusted {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+
+  .contact__container{
+    padding: 40px;
+  }
+
+  .visit{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .accordion_h4{
+    font-size: 13px;
+    font-weight: 400
+  }
+
+  .accordion_wrap{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 12px 8px;
+    margin: 10px;
+  }
+
+  .accordion_para{
+    font-weight: lighter;
+    font-size: 12px;
+    text-align: left;
+    line-height: 20px;
+    color: black;
+  }
+
+  .accordion_container{
+
+  }
