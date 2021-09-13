@@ -1,0 +1,382 @@
+
+  .about_header{
+    padding: 20px 48px;
+    font-family: Public Sans;
+  }
+
+  .about_header__header{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center
+  }
+
+  .about_header__header ~ p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: inherit;
+  } 
+
+  .paragraph{
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: left;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  .section{
+    padding: 40px;
+    font-family: Public Sans;
+  }
+
+  .provide_header{
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 29px;
+  }
+
+  .bold_header{
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    color: #fff;
+  }
+
+  .let_talk{
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .let_talk__info{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    font-family: Public sans;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+
+  .trusted {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+
+  .contact__container{
+    padding: 40px;
+  }
+
+  .visit{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .accordion_h4{
+    font-size: 13px;
+    font-weight: 400
+  }
+
+  .accordion_wrap{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 12px 8px;
+    margin: 10px;
+  }
+
+  .accordion_para{
+    font-weight: lighter;
+    font-size: 12px;
+    text-align: left;
+    line-height: 20px;
+    color: black;
+  }
+
+  .accordion_container{
+
+  }
+
+  .newsletter-container{
+    padding: 40px 0;
+    font-family: Public sans;
+  }
+
+  .newsletter-head {
+    text-align: center; 
+    font-size: 15px;
+    margin: 40px 0 0 0 
+  }
+
+  .newsletter-button{
+    border-radius: 0px 0px 5px 0px;
+ 
+  }
+
+  .newsletter-small{
+    margin: 8px 0;
+    font-size: 10px;
+    color: black;
+  }
+
+  .newsletter-input{
+      border-radius: 5px 0px 0px 5px;
+      border: 1px solid #C5CAD3;
+      padding: 8px;
+      font-size: 10px
+  }
+
+  .newsletter-text{
+    text-align: center; 
+    font-size: 11px; 
+    padding: 0 60px; 
+    color: black
+  }
+
+  .jumbotron-text{
+    margin: 0; 
+    font-weight: normal; 
+    font-size: 12px 
+  }
+  
+  .jumbotron-h5{
+    font-size:24px;
+    font-weight: normal;  
+  }
+
+  .jumbotron-h4{
+    margin: 0; 
+    padding: 13px; 
+    color: white; 
+    text-decoration: underline
+  }
+
+  .jumbotron-para{
+    font-size: 12px;
+    line-Height: 18px;
+  }
+
+  .jumbotron-button{
+    font-size: 10px; 
+    padding: 10px 12px
+  }
+
+  .jumbo_image{
+   display: none;
+  }
+
+  .under-header{
+    padding: 15px 20px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .card-wrap{
+
+  }
+
+  .insurance{
+      font-size: medium;
+      font-weight: bold 
+  }
+
+  .footer-text{
+    color: #BBBCC0;
+    font-size: 12px;
+    line-height: 15px
+  }
+
+  .footer-header{
+    color: #BBBCC0;
+    margin-bottom: 10px
+  }
+
+
+
+
+
+
+
+
+
+  @media (min-width: 376px) {
+    .jumbotron-button{
+      font-size: 12px;
+      margin-top: 10px;
+      padding: 15px 15px;
+    }
+
+    .newsletter-head{
+      text-align: center;
+      font-size: 16px;
+      margin: 0;
+      color: black;
+    }
+
+    .newsletter-text{
+      text-align: center;
+      font-size: 12px;
+      padding: 7px 70px;
+    }
+
+    .mail{
+      padding: 0;
+      margin: 0
+    }
+
+    .newsletter-input{
+      border-radius: 5px 0px 0px 5px;
+      border: 1px solid #C5CAD3;
+      padding: 11px 15px;
+      font-size: 12px;
+    }
+  }
+
+
+  @media (min-width: 414px) {
+    .jumbotron-text{
+      font-size: 13px;
+    }
+
+    .jumbotron-h4{
+      font-size: 20px;
+    }
+
+    .jumbotron-h5{
+      margin: 20px 0
+    }
+
+    .jumbotron-para{
+      font-size: 12px;
+      line-Height: 25px;
+    }
+
+    .jumbotron-h5{
+      font-size:27px;
+      font-weight: normal;  
+    }
+
+  
+  }
+
+
+
+
+@media (min-width: 600px) {
+
+  .jumbotron-h5{
+    font-size: 33px;
+    font-weight: normal;
+  }
+
+  .jumbotron-para{
+    font-size: 15px;
+    line-Height: 30px;
+  }
+
+  .break{
+
+  }
+
+  .newsletter-text{
+    padding: 7px 180px;
+    line-height: 22px;
+  }
+
+  .contact__container{
+    background-color: rgb(40, 52, 74);
+    display: flex;
+    gap: 12px;
+  }
+  
+}
+  
+@media (min-width: 768px) {
+  .jumbotron-para{
+    padding: 20px 0
+  }
+
+  .navbar_logo-container{
+    display: block;
+  }
+}
+
+
+@media (min-width: 1024px) {
+
+  .navbar_logo-container{
+    display: block !important;
+    padding: 0;
+    margin-left: -60px;
+  }
+
+  .jumbo_image{
+    display: block;
+    margin: auto;
+    justify-content: center;
+    position: absolute;
+    bottom: -5px;
+  }
+
+  .jumbo_image > img {
+    width: 300px;
+  }
+
+  .jumbotron-h5{
+    font-size: 48px;
+    font-weight: 400;
+    width: 70%;
+    margin: 0px
+  }
+
+  .jumbotron-para{
+    width: 70%;
+    margin: 0px;
+  }
+
+  .jumbotron-text{
+    font-size: 15px;
+  }
+
+  .jumbotron-h4{
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .jumbotron-button{
+    padding: 12px;
+    margin: 0px;
+  }
+
+  .under-header{
+    font-size: 12px;
+  }
+
+  .card-wrap{
+    text-align: left;
+    margin: 0 30px;
+  }
+
+  .insurance{
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  .newsletter-head{
+    font-size: 20px;
+    font-family: 'Public Sans';
+    font-weight: 700;
+  }
+
+  .newsletter-text{
+    padding: 7px 35%;
+    line-height: 22px;
+  }
+
+  .newsletter-container{
+    padding: 0 0 60px;
+  }
+}
