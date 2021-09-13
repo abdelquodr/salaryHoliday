@@ -15,19 +15,12 @@ export const ContactContainer = styled.div`
         grid-template-rows: 55vh ;
         grid-gap: 3em
     }
+
+    @media(min-width: 1024px){
+        display: flex
+    }
 `
 
-// export const Container = styled.div`
-//     display: block;
-//     padding: 40px 40px;
-//     background-color: ${ theme.color.deepBlue }; 
-
-
-//     @media(min-width: 376px){
-//         display: flex;
-//         padding: ${ theme.body.space }
-//     }
-// `
 
 
 

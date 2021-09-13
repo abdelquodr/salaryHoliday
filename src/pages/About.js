@@ -3,7 +3,10 @@ import  Footer from '../components/infoFooter'
 import Navbar from "../layouts/TopBar"
 import NewLetter from "../layouts/newsLetter"
 import { theme } from "../components/GlobalStyle"
-
+import Shield from '../assets/images/shield.png'
+import letTalk from '../assets/images/let_talk.png'
+import secure from '../assets/images/secure.png'
+import Values from '../assets/images/our-values.png'
 
 const About = ( ) => {
     return (
@@ -12,32 +15,35 @@ const About = ( ) => {
             <div className='about_header'>
                 <div>
                     <h4 className='about_header__header'>We're on mission on making insurance products that works for you</h4> 
-                    <p className='paragraph' style={{color: theme.color.black }}>We're a team of Insurance expert and technologists building supplemental health solutions to enhance your health coverage </p>
+                    <p className='paragraph aboutheader-para' >We're a team of Insurance expert and technologists building supplemental health solutions to enhance your health coverage </p>
                 </div>
                 <div>
                     images is coming here
                 </div>
             </div>
          
-            <div>
-                <div  className='section' style={{ backgroundColor: theme.color.deepBlue }}>
+            <div className='about-contain'>
+                <div  className='sect about-section' style={{ backgroundColor: theme.color.deepBlue }}>
+                    <div>
+                        <img src={Shield} alt='shield' />
+                    </div>
                     <h4 className='provide_header'>
-                        We provide products that cater for your today, while also securing your tomorrow 
+                        We provide products that cater for your today, while also <span style={{color: '#FF7139', opacity: '0.7', fontWeight: 'bold'}}>securing your tomorrow</span> 
                     </h4>
                     <p className='paragraph'> 
                         you can constantly access a range of innovative insurance products to protect your lived ones 
                         in case of life eventualities. Life insurance is no longer tedious and mundane with our simple and easy-to-use solutions.
                     </p>
                 </div>
-                <div>
-                    image is coming here
+                <div className='about-section'>
+                   <img className='about-img' src={Values} alt='values' />
                 </div>
             </div>
 
 
-            <div>
-                <div className='section' style={{ backgroundColor: theme.color.orange }}>
-                    <h6 style={{fontSize: '18px', color: '#fff'}}>
+            <div className='about-contain reverse'>
+                <div className='sect about-section' style={{ backgroundColor: theme.color.orange }}>
+                    <h6 className='about-values' style={{fontSize: '18px', color: '#fff'}}>
                         Our values take the lead
                     </h6>
 
@@ -57,14 +63,14 @@ const About = ( ) => {
                     </div>
                    
                 </div>
-                <div>
-                    image is coming here
+                <div className='about-section'>
+                    <img className='about-img' src={secure} alt='secure' />
                 </div>
             </div>
 
 
             <div className='section'>
-                <h5 className='trusted'> Trusted by <span>Over 1000 brands worldwide</span> </h5>
+                <h5 className='trusted'> Trusted by <span style={{fontWeight: 'bold'}}>Over 1000 brands</span> worldwide </h5>
                 <div>
                     <div>
                         image
@@ -81,8 +87,8 @@ const About = ( ) => {
                 </div>
             </div>
 
-            <div>
-                <div className='section'>
+            <div className='section-img'>
+                <div className='section about-section'>
                     <h4 className='let_talk'>Let's talk.</h4>
                     <p className='paragraph' style={{ color: theme.color.black}}>tell us about yourself and your group, and someone from our team will be in touch, usually withn 24 hours</p>
                     <div className='let_talk__info'>
@@ -98,8 +104,8 @@ const About = ( ) => {
                         </ul>
                     </div>
                 </div>
-                <div>
-                    image
+                <div className='section about-section let-talk-img img-small'>
+                    <img className='about-img img' src={letTalk} alt='let-talk' />
                 </div>
             </div>
 

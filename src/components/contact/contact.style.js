@@ -24,27 +24,41 @@ export const ContactContainer = styled.div`
 
 
     @media(min-width: 1024px){
-        margin: 60px 0px;
-        padding: 60px 60px;
+        display: flex
+        padding: 6px;
     }
 `
 
 export const HeaderContainer = styled.div`
     grid-area: 1 / 1 / 2 / 2;
+
+    @media(min-width: 1024px){
+     flex: 1 1 0px;
+     margin: auto
+    }
 `
 
 export const EmailContainer = styled.div`
     margin: 20px 0;
-
     grid-area: 1 / 2 / 2 / 3;
 
     @media(min-width: 600px){
         margin: 0;
     }
+
+    @media(min-width: 1024px){
+        flex: 1 1 0px;
+        margin: auto
+       }
 `
 
 export const SocialContainer = styled.div`
     grid-area: 1 / 3 / 2 / 4;
+
+    @media(min-width: 1024px){
+        flex: 1 1 0px;
+        margin: auto
+    }
 `
 
 export const Header = styled.h4`

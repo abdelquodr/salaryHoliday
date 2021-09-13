@@ -22,7 +22,7 @@ export const Container = styled.div`
     }
 
     @media(min-width: 1024px){
-        padding: 0 60px;
+        padding: 60px;
         grid-template-columns: 1fr 100px 1fr;
         height: auto;
     }
@@ -30,10 +30,12 @@ export const Container = styled.div`
 
 export const Section = styled.div`
     grid-area: 1 / 1 / 2 / 2 ;
+    margin: auto;    
 `
 
 export const SectionB = styled.div`
     grid-area: 1 / 3 / 2 / 4;
+    margin: auto
 `
 
 export const Header = styled.h2`
@@ -52,7 +54,9 @@ export const Header = styled.h2`
 
     @media(min-width:: 1024px){
         font-size:48px;
-        line-height: 58px
+        line-height: 58px; 
+        margin: 0px 0 20px 0;
+
     }
   ;   
 `
