@@ -3,56 +3,56 @@ import Footer from "../components/infoFooter";
 import NewLetter from "../layouts/newsLetter";
 import Navbar from '../layouts/TopBar'
 import ContactSection from "../layouts/contact";
-import { theme } from "../components/GlobalStyle";
 
 const Faq = ( ) => {
     return (
         <React.Fragment>
             <Navbar />
-            <div style={{backgroundColor: '#F1FCFF', padding: '20px'}}>
-                <div>
-                    <div  className='contact__container'>
-                        <h3 style={{
-                            textAlign: 'center',
-                            fontSize: '25px',
-                            margin: '0'
-                        }}>Frequently asked questions</h3>
-                        <p className='paragraph accordion_para' style={{color: theme.color.black, textAlign: 'center'}}>Get the best service at the lowest price</p>
-                    </div> 
+            <div className='contact-us' style={{backgroundColor: '#F1FCFF'}}>
+                <div className='freq-container'>
+                        <h4 className='frequently'>Frequently asked question</h4>
+                        <p className='freq-paragraph'>Get the best service at the lowest price</p>
                 </div>
+                    
 
                 <div className='section'>
-                    {/* <div>
-                        <h4 style={{textAlign: 'center'}}>Frequently asked question</h4>
-                        <p className='paragraph' style={{color: theme.color.black, margin: '5px 0', textAlign: 'center'}}>Get the best service at the lowest price</p>
-                    </div> */}
                     
                     <div>
+                        <ul className='select-insurance'>
+                            <li>Genearal</li>
+                            <li>Car Insurance</li>
+                            <li>Job loss Insurance</li>
+                            <li>Travel Insurance</li>
+                            <li>Claim</li>
+                        </ul>
+                    </div>
+
+                    <div class='faq'>
                         <div className='accordion_wrap'>
                             <details>  
-                                <summary className='accordion_h4'>How does website version control works?</summary>  
-                                <p className='paragraph accordion_para'>This is section 1</p>  
+                                <summary className='accordion_h4'>Is there age limit for signing up for this policy?</summary>  
+                                <p className='paragraph accordion_para'>You must be 18 years and above to apply for this scheme</p>  
                             </details>
                         </div>
 
                         <div className="accordion_wrap">
                             <details>  
-                                <summary className='accordion_h4'>Can I use this without an extension?</summary>  
-                                <p className='paragraph accordion_para' >This is section 1</p>  
+                                <summary className='accordion_h4'>If the loss of job occur before initial period of 6 month, what am i entitled to?</summary>  
+                                <p className='paragraph accordion_para'>A subscriber is only entitled to 90% of his tota premium contributed but not the benefit</p>  
                             </details>
                         </div>
 
                         <div className='accordion_wrap'>
                             <details>  
-                                <summary className='accordion_h4'>Why is this better than usepastel?</summary>  
-                                <p className='paragraph accordion_para'>This is section 1</p>  
+                                <summary className='accordion_h4'>Is there salary limit for enrollee of loss fo employment insurance policy scheme?</summary>  
+                                <p className='paragraph accordion_para'>Yes. The minimum salary that can be insured is N75,000 monthly salary</p>  
                             </details>
                         </div>
 
                         <div className="accordion_wrap">
                             <details>  
-                                <summary className='accordion_h4'>How can integrate this with github?</summary>  
-                                <h3 className='paragraph accordion_para'>This is section 1</h3>  
+                                <summary className='accordion_h4'>I am self-employed; can I sign up for loss of employment insurance?</summary>  
+                                <h3 className='paragraph accordion_para'>No, the scheme covers only permanent employees in a paid employment</h3>  
                             </details>
                         </div>
                     </div>

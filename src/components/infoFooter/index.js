@@ -1,8 +1,6 @@
 import React from "react";
 import {   Text, Header } from './infoFooter.style.';
 import Logo from '../../assets/images/salaryHolidayLogo.svg'
-import { theme } from "../GlobalStyle";
-import { ContactContainer } from "../contact/contact.style";
 
 
 const Footer = () => {

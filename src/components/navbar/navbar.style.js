@@ -65,6 +65,7 @@ export const Item = styled.li`
     display: flex;
     margin: 0;
     padding: 0;
+    cursor: pointer
     color: ${ theme.color.black };
 `
 

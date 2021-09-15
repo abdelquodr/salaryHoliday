@@ -1,7 +1,6 @@
 
 import React from 'react'
 import CustomButton from '../../components/button'
-import Contact from '../../components/contact'
 
 
 const NewLetter = () => {
@@ -9,7 +8,8 @@ const NewLetter = () => {
         <div className="newsletter-container">
             <div>
                 <h3 className="newsletter-head" >Subscribe to our newsletter to get updated</h3>
-                <p className='newsletter-text' style={{color: '#0E1525'}}> Get our latest update on your inbox. with lots of unique blocks,
+                <p className='newsletter-text' style={{color: '#0E1525'}}> 
+                     Get our latest update on your inbox. with lots of unique blocks,
                      you can easily build a page without coding. Build your next consultancy 
                      website within few minutes.
                 </p>

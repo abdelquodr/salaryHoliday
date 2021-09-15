@@ -45,6 +45,10 @@
 
   .reverse{
 
+  } 
+  
+  .contain-card{
+
   }
 
   .let-talk-img{
@@ -211,6 +215,10 @@
     line-Height: 18px;
   }
 
+  .faq{
+
+  }
+
   .jumbotron-button{
     font-size: 10px; 
     padding: 10px 12px
@@ -245,6 +253,47 @@
   .footer-header{
     color: #BBBCC0;
     margin-bottom: 10px
+  }
+
+  .claim-card{
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 60px 80px rgb(0 0 0 / 6%);
+    background-color: #fff;
+    margin: 0px 15px 25px 15px;
+  }
+
+  .claim-paragraph{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .claim-header{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .claim-section{
+    padding: 20px 40px;
+    font-family: Public Sans;
+  }
+
+  .claim-head{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    margin: auto;
   }
 
   .footer{
@@ -308,6 +357,34 @@
     color: #fff;
   }
 
+  a{
+    color: black;
+    text-decoration: none;
+  }
+
+  
+  .dropdown{
+    position: absolute;
+    top: 3.5em;
+    z-index: 10;
+    background: #fff;
+    padding: 0px;
+    margin: 0;
+    box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
+    border-left: 2px solid #1693D9FD;
+  }
+
+  .dropdown-list{
+    padding: 0;  
+  }
+
+  .dropdown-list > a > li {
+    padding: 8px 20px;
+  }
+  
+  .dropdown-list > a >li:hover {
+    background-color: #F1F7FD;
+  }
 
 
   @media (min-width: 376px) {
@@ -367,6 +444,7 @@
       font-size:27px;
       font-weight: normal;  
     }
+
 
     .about-img{
       background-repeat: no-repeat;
@@ -436,6 +514,62 @@
 
   }
 
+  .claim-card-container{
+    display: flex;
+    padding: 0 40px;
+    gap: 20px;
+  }
+
+  .claim-card-container > div {
+    flex: 1 1;
+    box-sizing: border-box;
+    margin: 0px;
+  }
+
+  .claim-header {
+    text-align: left;
+    font-size: 27px;
+    padding: 40px 0px 0px;
+  }
+
+  .claim-head{
+    text-align: left;
+  }
+
+  .claim-feature{
+    flex: 1 1;
+  }
+
+  .claim-section{
+    padding: 0;
+  }
+
+  .claim-card{
+    flex: 50vw;
+    margin: 0px;
+  }
+
+  .claim-card > h4 {
+    margin: 0;
+  }
+
+  .added-gap{
+    gap: 80px;
+    margin: 0;
+  }
+
+  .align-center{
+    text-align: center;
+  }
+
+  .align-left{
+    text-align: left;
+  }
+
+  .claim-paragraph{
+    text-align: left;
+  }
+
   .let-talk-img{
     display: block;
     margin: 80px;
@@ -488,6 +622,13 @@
   .contact-us-details{
     display: flex;
     justify-content: space-around;
+  }
+
+  .claim-card-container {
+    display: flex;
+    padding: 40px;
+    grid-gap: 20px;
+    gap: 20px;
   }
 
   .contact__container > p{
@@ -616,8 +757,48 @@
     line-height: 22px;
   }
 
+  .contact__container ~ h3{
+    font-size: 33px;
+  }
+
+  .claim-section{
+    font-family: "Public sans";
+    padding: 40px 0px;
+  }
+
+  .claim-card-container{
+    padding: 40px 80px;
+    gap: 80px;
+  }
+
+  .claim-card-container > div {
+    gap: 80px;
+    padding: 40px;
+  }
+
+  .claim-card{
+    margin: 0 40px;
+  }
+
+  .faq{
+    width: 40rem;
+    margin: auto;
+  }
+
+  .padless{
+    padding: 0;
+  }
+
+  .frequently{
+    font-size: 24px;
+  }
+
   .newsletter-container{
     padding: 0 0 60px;
+  }
+
+  .contain-card{
+    padding: 0;
   }
 
   .footer{
@@ -631,5 +812,13 @@
 
   .footer-bundle{
     flex: 1 1 0px;
+  }
+
+
+
+  @-moz-document url-prefix() { 
+    .jumbo_image {
+       left: 38%;
+    }
   }
 }
