@@ -13,7 +13,7 @@ const JobLoss = ( ) => {
 
         <div style={{borderRadius: '15px'}}>
             <div style={{ backgroundColor: '#E2EFFF', padding: '20px'}}>
-                <div style={{display: 'flex', justifyContent: 'space-around', margin: 'auto', width: '60%', padding: '10px', height: '37vh', color: '#000'}}>
+                <div style={{display: 'flex', justifyContent: 'space-between', margin: 'auto', width: '60%', padding: '10px', height: '37vh', color: '#000'}}>
                     
                     <div style={{width: '45vw', color: '#000', padding: '25px'}}>
                         <div style={{display:'flex', textAlign: 'center', alignItems: 'center'}}>
