@@ -57,3 +57,10 @@ export const Logo = styled.img`
     height: 36px;
     letter-spacing: 10px;   
 `
+export const Url = styled.a`
+    width: 20px;
+    color: #fff;
+    src: '';
+    background-color: skyblue;
+    text-decoration: none; 
+`

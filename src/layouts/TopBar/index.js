@@ -1,10 +1,10 @@
 import Navbar from "../../components/navbar";
-import Logo from '../../assets/images/salaryHolidayLogo.svg'
-import phone from '../../assets/images/phone.svg'
+import Logo from '../../assets/images/salaryHolidayLogo.svg';
+import Url from '../../components/navbar';
+import phone from '../../assets/images/phone.svg';
 import CustomButton from "../../components/button";
 
 const list = [
-    'Products -',
     'Company -',
     'Make a claim'
 ]
@@ -22,13 +22,18 @@ const TopBar = () => {
             </ul>
             
             <Navbar.ListItem>
+            <Navbar.Url href={ Url } /> 
+                    <Navbar.Item>
+                        <a style={{textDecoration: 'none'}} href="/JobLoss">Products</a>
+                    </Navbar.Item> 
+                    
                 <Navbar.ListItem>
                 { list.map((each, ind) => <Navbar.Item key={ ind + each }> { each } </Navbar.Item> )}
                 </Navbar.ListItem>
 
                 <Navbar.ListItem >
                     <Navbar.Item> Log In </Navbar.Item> 
-                    <CustomButton children="Create Account" />            
+                    <CustomButton style={{padding: '12px', fontSize: '10px'}} children="Create Account" />            
                 </Navbar.ListItem>
             </Navbar.ListItem>
            
