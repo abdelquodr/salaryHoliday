@@ -7,35 +7,24 @@ import Sections from '../components/Section'
 import CustomButton from "../components/button";
 import { Link } from 'react-router-dom'
 import Arrow from '../assets/icons/Arrow.svg'
-import Contact from '../components/contact'
 import Footer from '../components/infoFooter'
 import ContactSection from '../layouts/contact'
+import NewLetter from '../layouts/newsLetter'
 
 const Home = () => {
     return (
         <React.Fragment style={{width: '100vw'}}>
             <Navbar />
             <Header />
-            <div 
-                style={{
-                    backgroundColor: theme.color.lightBlue,
-                    padding: '15px 20px',
-                    color: 'white',
-                    fontSize: '10px',
-                    textAlign: 'center',
-            }}>
+            <div className='under-header' style={{ backgroundColor: theme.color.lightBlue}}>
                 you can save over N3m per year in damages. Watch our video to see how you can do this
             </div>
             <Card />
             <div style={{
                 textAlign: 'center'
             }}  >
-                <p style={{
-                    fontSize: 'medium',
-                    fontWeight: 'bold',
-                }}>
-                    <span style={{color: theme.color.lightOrange }}>Explore {' '} </span>
-                    Insurance products in minutes.
+                <p className='insurance'>
+                    <span style={{color:'#E48952'}}>Explore</span> Insurance products in minutes.
                 </p>
             </div>
 
@@ -106,7 +95,7 @@ const Home = () => {
              <Sections>
                 <Sections.Section>
                    <Sections.Header>
-                        Travel Insurance That <br />
+                        Travel Insurance That <br className='break' />
                         Meet Your Needs 
                    </Sections.Header> 
                    <Sections.Text>
@@ -137,34 +126,14 @@ const Home = () => {
             {/* =============== CONATCT SECTION ================== */}
             <ContactSection />
 
-
-            {/*  ============= SUBSCRIBE SECTION ========================= */}
-            <div>
-                <h3 style={{textAlign: 'center', fontSize: '15px', margin: '40px 0 0 0' }}>Subscribe to our newsletter to get updated</h3>
-                <Contact.ContactText style={{ textAlign: 'center', fontSize: '11px', padding: '0 60px', color: theme.color.black }}> Get our latest update on your inbox. with lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</Contact.ContactText>
-            </div>
-            <div>
-                <div style={{textAlign: 'center'}}>
-                    <input placeholder='Enter email address' style={inputStyle} />
-                    <CustomButton space="12px 40px" style={{borderRadius:'0 5px 5px 0'}} children="Buy Now" />
-                    <p><small> We don't spam at all, our promise!</small></p>
-                </div>          
-            </div>
-
+            <NewLetter />
 
             {/* ==============  FOOTER SETION ==============================  */}
             <Footer />
         </React.Fragment>     
     )
 }
-
-
- const inputStyle = {
-    borderRadius: '5px 0px 0px 5px',
-    border: '1px solid gray',
-    padding: '8px',
-    fontSize: '10px'
- }    
+   
 
 
 

@@ -7,24 +7,24 @@ const Card = () => {
        <CardContainer>
             <CardContainer.Card>
                 <CardContainer.Icon src={ Icon1 } />
-                <div >
-                    <CardContainer.Header children='Best Quality' />
+                <div className='card-wrap'>
+                    <CardContainer.Header children='Best quality' />
                     <CardContainer.Text children="A team of experts passionate about product management." />
                 </div>          
             </CardContainer.Card>
           
             <CardContainer.Card>
                 <CardContainer.Icon src={ Icon1 } />
-                <div>
-                    <CardContainer.Header children='Best Quality' />
+                <div className='card-wrap'>
+                    <CardContainer.Header children='Fastest delivery' />
                     <CardContainer.Text children="A team of experts passionate about product management." />
                 </div> 
             </CardContainer.Card>
 
             <CardContainer.Card>
                 <CardContainer.Icon src={ Icon1 } />
-                <div >
-                    <CardContainer.Header children='Best Quality' />
+                <div className='card-wrap' >
+                    <CardContainer.Header children='Great support' />
                     <CardContainer.Text children="A team of experts passionate about product management." />
                 </div> 
             </CardContainer.Card>

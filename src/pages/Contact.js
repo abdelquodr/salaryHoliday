@@ -1,23 +1,20 @@
 import React from "react";
 import { theme } from "../components/GlobalStyle";
 import Footer from "../components/infoFooter";
+import FagQuestion from "../layouts/faqQuestions";
 import Navbar from '../layouts/TopBar'  
 
 const Contact = () => {
     return (
-       <React.Fragment style={{fontFamily: 'Public sans' }}>
+       <React.Fragment>
            <Navbar />
-            <div style={{backgroundColor: '#F9FAFB', padding: '20px'}}>
+            <div className='contact-us' >
                 <div  className='contact__container'>
-                    <h3 style={{
-                        textAlign: 'center',
-                        fontSize: '25px',
-                        margin: '0'
-                    }}>Contact Us</h3>
+                    <h3>Contact Us</h3>
                     <p className='paragraph accordion_para' style={{color: theme.color.black, textAlign: 'center'}}>we are industry leading company that values honesty, integrity, and efficiency, Building quality products amd caring</p>
                 </div>
                 
-                <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                <div className='contact-us-details'>
                     <div>
                         <div  style={{textAlign: 'center'}}>
                             icon
@@ -50,47 +47,9 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-
-
-            <div className='section'>
-                <div>
-                    <h4 style={{textAlign: 'center'}}>Frequently asked question</h4>
-                    <p className='paragraph' style={{color: theme.color.black, margin: '5px 0', textAlign: 'center'}}>Get the best service at the lowest price</p>
-                </div>
-
-                <div>
-                    <div className='accordion_wrap'>
-                        <details>  
-                            <summary className='accordion_h4'>How does website version control works?</summary>  
-                            <p className='paragraph accordion_para'>This is section 1</p>  
-                        </details>
-                    </div>
-
-                    <div className="accordion_wrap">
-                        <details>  
-                            <summary className='accordion_h4'>Can I use this without an extension?</summary>  
-                            <p className='paragraph accordion_para' >This is section 1</p>  
-                        </details>
-                    </div>
-
-                    <div className='accordion_wrap'>
-                        <details>  
-                            <summary className='accordion_h4'>Why is this better than usepastel?</summary>  
-                            <p className='paragraph accordion_para'>This is section 1</p>  
-                        </details>
-                    </div>
-
-                    <div className="accordion_wrap">
-                        <details>  
-                            <summary className='accordion_h4'>How can integrate this with github?</summary>  
-                            <h3 className='paragraph accordion_para'>This is section 1</h3>  
-                        </details>
-                    </div>
-                </div>
-            </div>
-
+            <FagQuestion />
             <Footer />  
-     
+            
        </React.Fragment>
     )
 }

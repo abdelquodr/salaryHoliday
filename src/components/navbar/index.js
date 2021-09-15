@@ -1,5 +1,9 @@
 import React from 'react'
+<<<<<<< HEAD
 import { Container, ListItem, Item, Logo, Url, NavbarIcon } from './navbar.style'
+=======
+import { Container, ListItem, Item, Logo, NavbarIcon } from './navbar.style'
+>>>>>>> quodr/responsiveness
 
 const Navbar = ({ children, ...restProps}) => {
     return (
@@ -40,10 +44,13 @@ Navbar.Logo = function NavbarLogo({ children, ...restProps}) {
     )
 }
 
+<<<<<<< HEAD
 Navbar.Url = function NavbarUrl({ children, ...restProps}) {
     return (
         <Url {...restProps} />
     )
 }
 
+=======
+>>>>>>> quodr/responsiveness
 export default Navbar

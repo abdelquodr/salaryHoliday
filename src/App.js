@@ -9,7 +9,7 @@ import Home from './pages/Home';
 import About from './pages/About'
 import Contact from './pages/Contact';
 import Faq from './pages/faq'
-import JobLoss from './pages/JobLoss/index';
+import Claim from './pages/Claim'
 
 function App() {
   return (
@@ -19,8 +19,7 @@ function App() {
         <Route exact path='/about' component={ About }></Route>
         <Route exact path='/contact' component={ Contact }></Route>
         <Route exact path='/faq' component={ Faq }></Route>
-        <Route exact path='/JobLoss' component={ JobLoss }></Route>
-
+        <Route exact path='/claim' component={ Claim}></Route> 
       </Switch>
     </Router>
   );

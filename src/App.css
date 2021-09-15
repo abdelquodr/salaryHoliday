@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   /* .App {
     text-align: center;
   }
@@ -54,6 +55,68 @@
     font-size: 12px;
     font-weight: inherit;
   } 
+=======
+
+  .about_header{
+    padding: 20px 48px;
+    font-family: Public Sans;
+  }
+
+  .about_header__header{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: #214167;
+  }
+
+  .about_header__header ~ p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: inherit;
+    color: #1D263A;
+  } 
+
+  .about-values{
+    margin-top: 0px;
+  }
+
+  .aboutheader-para{
+    color: #0E1525;
+  }
+
+  .about-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25em;
+    width: 100%
+  }
+
+  .about-contain{
+    
+  }
+
+
+
+  .about-section{
+    
+  }
+
+  .reverse{
+
+  } 
+  
+  .contain-card{
+
+  }
+
+  .let-talk-img{
+    display: none;
+  }
+
+  .section-img{
+
+  }
+>>>>>>> quodr/responsiveness
 
   .paragraph{
     font-weight: lighter;
@@ -68,6 +131,14 @@
     font-family: Public Sans;
   }
 
+<<<<<<< HEAD
+=======
+  .sect{
+    padding: 40px;
+    font-family: Public Sans;
+  }
+
+>>>>>>> quodr/responsiveness
   .provide_header{
     font-size: 18px;
     font-weight: normal;
@@ -104,7 +175,11 @@
 
 
   .contact__container{
+<<<<<<< HEAD
     padding: 40px;
+=======
+    padding: 0px;
+>>>>>>> quodr/responsiveness
   }
 
   .visit{
@@ -119,10 +194,17 @@
     font-weight: 400
   }
 
+<<<<<<< HEAD
   .accordion_wrap{
     border: 1px solid lightgray;
     border-radius: 5px;
     padding: 12px 8px;
+=======
+  details{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 12px 12px;
+>>>>>>> quodr/responsiveness
     margin: 10px;
   }
 
@@ -131,9 +213,693 @@
     font-size: 12px;
     text-align: left;
     line-height: 20px;
+<<<<<<< HEAD
     color: black;
+=======
+    color: #fff
+>>>>>>> quodr/responsiveness
   }
 
   .accordion_container{
 
+<<<<<<< HEAD
   }
+=======
+  }
+
+  .newsletter-container{
+    padding: 40px 0;
+    font-family: Public sans;
+  }
+
+  .newsletter-head {
+    text-align: center; 
+    font-size: 15px;
+    margin: 40px 0 0 0;
+    color: #0E1525;
+    font-family: Public Sans;
+    font-Weight : 700;
+    font-style: normal; 
+  }
+
+  .newsletter-button{
+    border-radius: 0px 0px 5px 0px;
+ 
+  }
+
+  .newsletter-small{
+    margin: 8px 0;
+    font-size: 10px;
+    color: black;
+    font-weight: lighter;
+    color: #0E1525;
+  }
+
+  .newsletter-input{
+      border-radius: 5px 0px 0px 5px;
+      border: 1px solid #C5CAD3;
+      padding: 8px;
+      font-size: 10px
+  }
+
+  .newsletter-text{
+    text-align: center; 
+    font-size: 11px; 
+    padding: 0 60px; 
+    color: black;
+    line-height: 20px;
+    color: #0E1525;
+    font-weight: lighter
+  }
+
+  .jumbotron-text{
+    margin: 0; 
+    font-weight: normal; 
+    font-size: 12px 
+  }
+  
+  .jumbotron-h5{
+    font-size:24px;
+    font-weight: normal;  
+  }
+
+  .jumbotron-h4{
+    margin: 0; 
+    padding: 13px; 
+    color: white; 
+    text-decoration: underline
+  }
+
+  .jumbotron-para{
+    font-size: 12px;
+    line-Height: 18px;
+  }
+
+  .faq{
+
+  }
+
+  .jumbotron-button{
+    font-size: 10px; 
+    padding: 10px 12px
+  }
+
+  .jumbo_image{
+   display: none;
+  }
+
+  .under-header{
+    padding: 15px 20px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .card-wrap{
+
+  }
+
+  .insurance{
+      font-size: medium;
+      font-weight: bold 
+  }
+
+  .footer-text{
+    color: #BBBCC0;
+    font-size: 12px;
+    line-height: 15px
+  }
+
+  .footer-header{
+    color: #BBBCC0;
+    margin-bottom: 10px
+  }
+
+  .claim-card{
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 60px 80px rgb(0 0 0 / 6%);
+    background-color: #fff;
+    margin: 0px 15px 25px 15px;
+  }
+
+  .claim-paragraph{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .claim-header{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .claim-section{
+    padding: 20px 40px;
+    font-family: Public Sans;
+  }
+
+  .claim-head{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .footer{
+    font-family: Public Sans;
+    display: block;
+    padding: 40px 40px;
+    background-color: #05101D
+
+  }
+
+
+  .contact-us-details{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .freq-container{
+    margin-bottom: 30px;
+  }
+
+  .contact-us{
+    background-color: #F9FAFB; 
+    padding: 40px 20px
+  }
+ 
+  .contact__container > h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .contact__container > p {
+    text-align: center;
+    font-size: 15px;
+    margin: 30px 0;
+  }
+
+  .frequently{
+    margin: 0;
+    text-align: center;
+  }
+
+  .freq-paragraph{
+    color: rgb(14, 21, 37);
+    margin: 5px 0px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details[open] {
+    background: #29323F;
+    outline: 1rem solid var(--bg);
+    margin: 0 0 2rem 0;
+    color: #fff;
+  }
+
+  a{
+    color: black;
+    text-decoration: none;
+  }
+
+  
+  .dropdown{
+    position: absolute;
+    top: 3.5em;
+    z-index: 10;
+    background: #fff;
+    padding: 0px;
+    margin: 0;
+    box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
+    border-left: 2px solid #1693D9FD;
+  }
+
+  .dropdown-list{
+    padding: 0;  
+  }
+
+  .dropdown-list > a > li {
+    padding: 8px 20px;
+  }
+  
+  .dropdown-list > a >li:hover {
+    background-color: #F1F7FD;
+  }
+
+
+  @media (min-width: 376px) {
+    .jumbotron-button{
+      font-size: 12px;
+      margin-top: 10px;
+      padding: 15px 15px;
+    }
+
+    .newsletter-head{
+      text-align: center;
+      font-size: 16px;
+      margin: 0;
+      color: black;
+    }
+
+    .newsletter-text{
+      text-align: center;
+      font-size: 12px;
+      padding: 7px 70px;
+    }
+
+    .mail{
+      padding: 0;
+      margin: 0
+    }
+
+    .newsletter-input{
+      border-radius: 5px 0px 0px 5px;
+      border: 1px solid #C5CAD3;
+      padding: 11px 15px;
+      font-size: 12px;
+    }
+  }
+
+
+  @media (min-width: 414px) {
+  
+    .jumbotron-text{
+      font-size: 13px;
+    }
+
+    .jumbotron-h4{
+      font-size: 20px;
+    }
+
+    .jumbotron-h5{
+      margin: 20px 0
+    }
+
+    .jumbotron-para{
+      font-size: 12px;
+      line-Height: 25px;
+    }
+
+    .jumbotron-h5{
+      font-size:27px;
+      font-weight: normal;  
+    }
+
+
+    .about-img{
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 25em;
+      width: 100%;
+    }
+
+   
+    .footer{
+        display: block;
+        font-family: Public Sans;
+        grid-template-columns: 48%, 26% 26%;
+        grid-template-rows: 55vh ;
+        grid-gap: 3em
+    }
+  }
+
+
+
+
+@media (min-width: 600px) {
+
+  .about_header__header{
+    padding: 0 100px;
+  }
+
+  .aboutheader-para{
+    color:#05101D;
+    padding: 0 150px; 
+  }
+
+  .sect{
+    padding: 40px;
+  }
+
+  .about-contain{
+    display: flex;
+    height: 30rem;
+    box-sizing: border-box;
+  }
+
+  .reverse{
+    flex-direction: row-reverse;
+  }
+
+  .about-section{
+    flex: 50% !important;
+    box-sizing: border-box;
+  }
+
+  .about-img{
+    height: 100%;
+  }
+
+  .jumbotron-h5{
+    font-size: 33px;
+    font-weight: normal;
+  }
+
+  .jumbotron-para{
+    font-size: 15px;
+    line-Height: 30px;
+  }
+
+  .break{
+
+  }
+
+  .claim-card-container{
+    display: flex;
+    padding: 0 40px;
+    gap: 20px;
+  }
+
+  .claim-card-container > div {
+    flex: 1 1;
+    box-sizing: border-box;
+    margin: 0px;
+  }
+
+  .claim-header {
+    text-align: left;
+    font-size: 27px;
+    padding: 40px 0px 0px;
+  }
+
+  .claim-head{
+    text-align: left;
+  }
+
+  .claim-feature{
+    flex: 1 1;
+  }
+
+  .claim-section{
+    padding: 0;
+  }
+
+  .claim-card{
+    flex: 50vw;
+    margin: 0px;
+  }
+
+  .claim-card > h4 {
+    margin: 0;
+  }
+
+  .added-gap{
+    gap: 80px;
+    margin: 0;
+  }
+
+  .align-center{
+    text-align: center;
+  }
+
+  .align-left{
+    text-align: left;
+  }
+
+  .claim-paragraph{
+    text-align: left;
+  }
+
+  .let-talk-img{
+    display: block;
+    margin: 80px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .img{
+    border-radius: 12px;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-rows: 18vh;
+    padding: 40px 26px;
+    grid-gap: 2.8em;
+  }
+
+  .newsletter-text{
+    padding: 7px 180px;
+    line-height: 22px;
+  }
+
+  .contact__container > p{
+    padding: 0 30px;
+  }
+  
+
+  .footer{
+    display: flex;
+  }
+}
+
+  
+@media (min-width: 768px) {
+
+  .about_header__header{
+    padding: 0 160px;
+  }
+
+  .about_header__header ~ p{
+    padding: 0 300px;
+    font-size: 13px;
+  }
+
+  .jumbotron-para{
+    padding: 20px 0
+  }
+
+  .contact-us-details{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .claim-card-container {
+    display: flex;
+    padding: 40px;
+    grid-gap: 20px;
+    gap: 20px;
+  }
+
+  .contact__container > p{
+    padding: 0 100px;
+  }
+
+  .navbar_logo-container{
+    display: block;
+  }
+
+  .footer{
+    display: flex;
+    padding: 60px 60px;
+  }
+
+  .footer-bundle{
+    flex: 1 1 0px;
+  }
+}
+
+
+@media (min-width: 1025px) {
+
+  .about_header__header{
+    padding: 0 300px;
+  }
+
+  .about_header__header ~ p{
+    padding: 0 350px;
+    font-size: 13px;
+  }
+
+  .about-contain{
+    height: 25rem;
+  }
+  .navbar_logo-container{
+    display: block !important;
+    padding: 0;
+    margin-left: -60px;
+  }
+
+  .jumbo_image{
+    display: block;
+    margin: auto;
+    justify-content: center;
+    position: absolute;
+    bottom: -5px;
+  }
+
+  .jumbo_image > img {
+    width: 300px;
+  }
+
+  .section-img{
+    display: flex;
+    padding: 0 80px;
+    justify-content: center;
+  }
+  
+  .img{
+    width: 20rem;
+    justify-content: center;
+  }
+
+  .jumbotron-h5{
+    font-size: 48px;
+    font-weight: 400;
+    width: 70%;
+    margin: 0px
+  }
+
+  .let-talk-img{
+    width: 10rem;
+    justify-content: right;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .let-talk-img ~ .paragraph{
+    word-break: break-word ;
+  }
+
+  .jumbotron-para{
+    width: 70%;
+    margin: 0px;
+  }
+
+  .jumbotron-text{
+    font-size: 15px;
+  }
+
+  .jumbotron-h4{
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .jumbotron-button{
+    padding: 12px;
+    margin: 0px;
+  }
+
+  .under-header{
+    font-size: 12px;
+  }
+
+  .card-wrap{
+    text-align: left;
+    margin: 0 30px;
+  }
+
+  .insurance{
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  .newsletter-head{
+    font-size: 20px;
+    font-family: 'Public Sans';
+    font-weight: 700;
+    margin: 60px 0px 0px 0px;
+  }
+
+  .newsletter-text{
+    padding: 7px 35%;
+    line-height: 22px;
+  }
+
+  .contact__container ~ h3{
+    font-size: 33px;
+  }
+
+  .claim-section{
+    font-family: "Public sans";
+    padding: 40px 0px;
+  }
+
+  .claim-card-container{
+    padding: 40px 80px;
+    gap: 80px;
+  }
+
+  .claim-card-container > div {
+    gap: 80px;
+    padding: 40px;
+  }
+
+  .claim-card{
+    margin: 0 40px;
+  }
+
+  .faq{
+    width: 40rem;
+    margin: auto;
+  }
+
+  .padless{
+    padding: 0;
+  }
+
+  .frequently{
+    font-size: 24px;
+  }
+
+  .newsletter-container{
+    padding: 0 0 60px;
+  }
+
+  .contain-card{
+    padding: 0;
+  }
+
+  .footer{
+    display: flex;
+    padding: 60px 60px;
+  }
+
+  .footer-text{
+    line-height: 20px;
+  }
+
+  .footer-bundle{
+    flex: 1 1 0px;
+  }
+
+
+
+  @-moz-document url-prefix() { 
+    .jumbo_image {
+       left: 38%;
+    }
+  }
+}
+>>>>>>> quodr/responsiveness
