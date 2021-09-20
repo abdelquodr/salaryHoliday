@@ -1,7 +1,8 @@
 import React from "react";
 import { theme } from "../components/GlobalStyle";
 import Footer from "../components/infoFooter";
-import Navbar from '../layouts/TopBar'  
+import Navbar from '../components/navbar'
+
 
 const Contact = () => {
     return (

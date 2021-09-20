@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ListItem, Item, Logo, Url, NavbarIcon } from './navbar.style'
+import { Container, ListItem, Item, Logo, NavbarIcon } from './navbar.style'
 
 const Navbar = ({ children, ...restProps}) => {
     return (
@@ -37,12 +37,6 @@ Navbar.Item = function NavbarItem({ children, ...restProps}) {
 Navbar.Logo = function NavbarLogo({ children, ...restProps}) {
     return (
         <Logo {...restProps} />
-    )
-}
-
-Navbar.Url = function NavbarUrl({ children, ...restProps}) {
-    return (
-        <Url {...restProps} />
     )
 }
 
