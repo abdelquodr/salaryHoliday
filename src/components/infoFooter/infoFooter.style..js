@@ -26,13 +26,15 @@ export const ContactContainer = styled.div`
 
 
 export const Header = styled.h6`
-      color: #BBBCC0
+    color: #fff; 
+    font-size: 16px;
+}
 `
 
 export const Text = styled.p`
     color: #BBBCC0;
-    font-size: 12px;
-    line-height: 10px;
+    font-size: 14px;
+    line-height: 20px;
 `
 
 

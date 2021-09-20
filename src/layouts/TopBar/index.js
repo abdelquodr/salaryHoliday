@@ -5,6 +5,9 @@ import phone from '../../assets/images/phone.svg'
 import { NavLink } from 'react-router-dom';
 import '../../components/navbar/navbar.css'
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "gsap/all";
+import shield from '../../assets/icons/jobloss.png'
+import car from '../../assets/icons/car.png'
+import travel from '../../assets/icons/travel.png'
 
 // don't forget to register plugins
 gsap.registerPlugin(ScrollTrigger, Draggable, MotionPathPlugin); 
@@ -67,15 +70,16 @@ const TopBar = () => {
                     { showProduct && 
                         <div className='dropdown'>
                             <ul className='dropdown-list'>
+                                <NavLink to='/jobloss-insurance' activeStyle={{color: '#E48952'}}>    
+                                    <Navbar.Item className='dropdown-item'><img style={{width: '15px', height: '15px'}} className='small-shield-img' src={shield} />  Loss Job Insurance</Navbar.Item>
+                                    {/* <small>Get benefit if you lose your job or source of income</small> */}
+                                </NavLink>
                                 <NavLink to='/car-insurance' activeStyle={{color: '#E48952'}}>
-                                    <Navbar.Item className='dropdown-item'>Car Insurance</Navbar.Item>
+                                    <Navbar.Item className='dropdown-item'> <img style={{width: '15px', height: '15px'}} className='small-shield-img' src={car} /> Car Insurance</Navbar.Item>
                                 </NavLink>
                                 <NavLink to='/travel-insurance' activeStyle={{color: '#E48952'}}>    
-                                    <Navbar.Item className='dropdown-item'>Travel Insurance</Navbar.Item>
-                                </NavLink>
-                                <NavLink to='/loss-job-insurance' activeStyle={{color: '#E48952'}}>
-                                    <Navbar.Item className='dropdown-item'>Loss Job Insurance</Navbar.Item>
-                                </NavLink>
+                                    <Navbar.Item className='dropdown-item'><img style={{width: '15px', height: '15px'}} className='small-shield-img' src={travel} />  Travel Insurance</Navbar.Item>
+                                </NavLink>                             
                             </ul>
                         </div>  } 
                     <NavLink to='/company' activeStyle={{color: '#E48952'}}>     

@@ -7,6 +7,11 @@ import Shield from '../assets/images/shield.png'
 import letTalk from '../assets/images/let_talk.png'
 import secure from '../assets/images/secure.png'
 import Values from '../assets/images/our-values.png'
+import solid from '../assets/icons/solid.png'
+import group from '../assets/icons/Group 281.svg'
+import group1 from '../assets/icons/Group.svg'
+import group2 from '../assets/icons/Group (1).svg'
+import group3 from '../assets/icons/Group 280.svg'
 
 const About = ( ) => {
     return (
@@ -18,12 +23,12 @@ const About = ( ) => {
                     <p className='paragraph aboutheader-para' >We're a team of Insurance expert and technologists building supplemental health solutions to enhance your health coverage </p>
                 </div>
                 <div>
-                    images is coming here
+                    <img className='solid-img' src={solid} alt='solid' />
                 </div>
             </div>
          
             <div className='about-contain'>
-                <div  className='sect about-section' style={{ backgroundColor: theme.color.deepBlue }}>
+                <div  className='sect about-section added-pad' style={{ backgroundColor: theme.color.deepBlue }}>
                     <div>
                         <img src={Shield} alt='shield' />
                     </div>
@@ -42,8 +47,8 @@ const About = ( ) => {
 
 
             <div className='about-contain reverse'>
-                <div className='sect about-section' style={{ backgroundColor: theme.color.orange }}>
-                    <h6 className='about-values' style={{fontSize: '18px', color: '#fff'}}>
+                <div className='sect about-section added-pad' style={{ backgroundColor: theme.color.orange }}>
+                    <h6 className='about-values' >
                         Our values take the lead
                     </h6>
 
@@ -71,18 +76,18 @@ const About = ( ) => {
 
             <div className='section'>
                 <h5 className='trusted'> Trusted by <span style={{fontWeight: 'bold'}}>Over 1000 brands</span> worldwide </h5>
-                <div>
-                    <div>
-                        image
+                <div className='trustees-div'>
+                    <div className='trustees-img'>
+                        <img src={group} alt='group' />
                     </div>
-                    <div>
-                        image
+                    <div className='trustees-img'>
+                        <img src={group1} alt='group2' />
                     </div>
-                    <div>
-                        image
+                    <div className='trustees-img'>
+                        <img src={group2} alt='group2' />
                     </div>
-                    <div>
-                        image
+                    <div className='trustees-img'>
+                        <img src={group3} alt='group3' />
                     </div>
                 </div>
             </div>

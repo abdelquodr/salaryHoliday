@@ -19,7 +19,7 @@ const Faq = ( ) => {
                     
                     <div>
                         <ul className='select-insurance'>
-                            <li>Genearal</li>
+                            <li>General</li>
                             <li>Car Insurance</li>
                             <li>Job loss Insurance</li>
                             <li>Travel Insurance</li>

@@ -10,6 +10,10 @@ import Arrow from '../assets/icons/Arrow.svg'
 import Footer from '../components/infoFooter'
 import ContactSection from '../layouts/contact'
 import NewLetter from '../layouts/newsLetter'
+import employment from '../assets/icons/Group 1000002073 (1)(copy).png'
+import car from '../assets/icons/Group 1000002073 (2).png'
+import travel from '../assets/icons/Group 1000002068 (1).png'
+import play from '../assets/icons/Play.png'
 
 const Home = () => {
     return (
@@ -17,14 +21,14 @@ const Home = () => {
             <Navbar />
             <Header />
             <div className='under-header' style={{ backgroundColor: theme.color.lightBlue}}>
-                you can save over N3m per year in damages. Watch our video to see how you can do this
+                <img className='play' src={play} alt='play' />  <small> you can save over N3m per year in damages. Watch our video to see how you can do this </small>
             </div>
             <Card />
             <div style={{
                 textAlign: 'center'
             }}  >
                 <p className='insurance'>
-                    <span style={{color:'#E48952'}}>Explore</span> Insurance products in minutes.
+                  <span style={{color:'#E48952'}}>Explore</span> Insurance products in minutes.
                 </p>
             </div>
 
@@ -55,15 +59,15 @@ const Home = () => {
 
 
                 <Sections.SectionB>
-                    picture is coming here
+                    <img className='insurance-img' src={employment} alt='employment' />
                 </Sections.SectionB>
             </Sections>
 
 
             {/* ========== SECTION CAR INSURANCE ============================ */}
-            <Sections>
+            <Sections className='reverse-mobile'>
                 <Sections.Section>
-                   picture dey come soon
+                    <img className='insurance-img add-padding' src={car} alt='car' />
                 </Sections.Section>
 
 
@@ -118,7 +122,7 @@ const Home = () => {
 
 
                 <Sections.SectionB>
-                    picture is coming here
+                    <img className='insurance-img'  src={travel} alt='travel' />
                 </Sections.SectionB>
             </Sections>
 

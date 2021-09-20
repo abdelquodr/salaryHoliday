@@ -15,9 +15,8 @@ export const Container = styled.div`
 
     @media(min-width: 600px){
         display: grid;
-        grid-template-columns: 50% 25px 50%;
+        grid-template-columns: 50% 5px 50%;
         grid-template-rows: 1fr;
-
         padding: 0px 25px 
     }
 
@@ -52,7 +51,7 @@ export const Header = styled.h2`
         line-height: 40px;
     }
 
-    @media(min-width:: 1024px){
+    @media(min-width: 1024px){
         font-size:48px;
         line-height: 58px; 
         margin: 0px 0 20px 0;
@@ -69,6 +68,11 @@ export const Text = styled.p`
     font-size: 11px;
     line-height: 18px;
     opacity: 0.7;
+
+    @media(min-width: 1024px){
+        font-size: 13px
+    }
+    
 `
 
 export const TinyCard = styled.div`

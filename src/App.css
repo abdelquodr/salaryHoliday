@@ -13,7 +13,7 @@
 
   .about_header__header ~ p {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: inherit;
     color: #1D263A;
   } 
@@ -24,6 +24,13 @@
 
   .aboutheader-para{
     color: #0E1525;
+  }
+
+  .play{
+    margin: auto;
+    width: 11px;
+    margin-top: 0px;
+    padding: 0 5px;
   }
 
   .about-img{
@@ -46,6 +53,10 @@
   .reverse{
 
   } 
+
+  .cal-section{
+
+  }
   
   .contain-card{
 
@@ -55,13 +66,27 @@
     display: none;
   }
 
-  .section-img{
+  .section-img > img{
 
   }
 
+  .solid-img{
+    width: 100%
+  }
+
+  .trustees-div{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .trustees-img > img{
+    width: 60px
+  }
+  
+
   .paragraph{
-    font-weight: lighter;
-    font-size: 15px;
+    font-weight: 300;
+    font-size: 14px;
     text-align: left;
     line-height: 20px;
     color: #fff;
@@ -71,6 +96,13 @@
     padding: 40px;
     font-family: Public Sans;
   }
+
+  .faq-section{
+    background-color: #F1FCFF;
+    padding: 100px 40px;
+    margin-top: 40px;
+  }
+
 
   .sect{
     padding: 40px;
@@ -117,28 +149,35 @@
   }
 
   .visit{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     margin: 15px 0;
     text-align: center;
   }
 
   .accordion_h4{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400
   }
 
+
+  .faq-header{
+    color: #293752;
+  }
+
   details{
-    border: 1px solid lightgray;
+    border: 1px solid rgba(231, 231, 231, 0.5);
     border-radius: 5px;
-    padding: 12px 12px;
+    padding: 18px 12px;
     margin: 10px;
+    background: #fff;
+
   }
 
   .accordion_para{
-    font-weight: lighter;
+    font-weight: 300px;
     font-size: 12px;
-    text-align: left;
+    text-align: center;
     line-height: 20px;
     color: #fff
   }
@@ -153,13 +192,14 @@
   }
 
   .newsletter-head {
-    text-align: center; 
-    font-size: 15px;
-    margin: 40px 0 0 0;
+    padding: 0px 40px;
+    text-align: center;
+    font-size: 19px;
+    /* margin: 40px 0 0 0; */
     color: #0E1525;
     font-family: Public Sans;
-    font-Weight : 700;
-    font-style: normal; 
+    font-Weight: 700;
+    font-style: normal;
   }
 
   .newsletter-button{
@@ -184,12 +224,12 @@
 
   .newsletter-text{
     text-align: center; 
-    font-size: 11px; 
+    font-size: 14px;
     padding: 0 60px; 
     color: black;
     line-height: 20px;
     color: #0E1525;
-    font-weight: lighter
+    font-weight: normal
   }
 
   .jumbotron-text{
@@ -234,14 +274,19 @@
     font-size: 10px;
     text-align: center;
   }
-  
-  .card-wrap{
 
+  .card-wrap{
+    text-align: center;
   }
 
   .insurance{
-      font-size: medium;
-      font-weight: bold 
+      font-size: 30px;
+      font-weight: bold;
+  }
+
+  .insurance-img{
+    width: 17rem;
+    padding-top: 2em;
   }
 
   .footer-text{
@@ -273,12 +318,16 @@
     font-family: Public Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 36px;
-    letter-spacing: -1px;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0px;
     text-align: center;
     margin: 0;
     padding-bottom: 10px;
+  }
+
+  .loss-para > div{
+    margin: 20px 0px;
   }
 
   .claim-section{
@@ -304,9 +353,8 @@
 
   }
 
-
   .contact-us-details{
-    display: flex;
+    display: block;
     justify-content: space-between;
   }
 
@@ -333,6 +381,7 @@
 
   .frequently{
     margin: 0;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -340,7 +389,7 @@
     color: rgb(14, 21, 37);
     margin: 5px 0px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   details > summary {
@@ -371,7 +420,11 @@
     padding: 0px;
     margin: 0;
     box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.06);
-    border-left: 2px solid #1693D9FD;
+    background: #FFFFFF;
+    border: 1px solid #E4E7EC;
+    box-sizing: border-box;
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.1), 0px 4px 6px -2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
   }
 
   .dropdown-list{
@@ -379,13 +432,182 @@
   }
 
   .dropdown-list > a > li {
-    padding: 8px 20px;
+    padding: 12px 20px;
   }
   
   .dropdown-list > a >li:hover {
     background-color: #F1F7FD;
   }
 
+  .loss-jumbo-container{
+    padding: 20px 20px 0px 20px;
+    background:#CDF3FF;
+    font-family: 'PUBLIC SANS';
+  }
+
+  .reverse-mobile{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse
+  }
+
+  .loss-header{
+    width: 70%;
+    margin: 5px 0px;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -1px
+  }
+
+  .loss-para{
+    color: #202124;
+  }
+
+  .loss-head{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .select-insurance{
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      list-style: none;
+      text-align: center;
+      margin: auto;
+      border-bottom: 1px solid #C0C8D2;   
+      padding-bottom: 0px;
+      margin: 20px auto;
+  }
+
+  .select-insurance > li{
+    padding: 20px;
+  }
+
+  .select-insurance li:active{
+    border-bottom: 2px solid orange;
+    padding-bottom: 20px;
+    color: orange;
+    
+  }
+
+  .job-loss-img-div{
+    width:100%;
+  }
+
+  .job-loss-img{  
+    left: 0rem;
+    width: 20rem;
+  }
+
+  .input-container{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .input-container > input{
+    padding: 16px 10px;
+    margin: 5px 0;
+    border: 1px solid lightgrey;
+    border-radius: 9px;
+    font-weight: lighter;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .how-it-work-icon{
+    width: 50px;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .calculator-div{
+    background: #FFFFFF;
+    box-shadow: 7.68831px 15px 30px rgb(26 34 56 / 8%);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px 0 40px 0px
+  }
+
+  .job-loss-card{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(14, 21, 37, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px 0px
+  }
+
+  .circle-num{
+    background: #00B49B;
+    border-radius: 50%;
+    height: 17px;
+    width: 10px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  .rounded-num{
+    width: 10px;
+    height: 10px;
+    padding: 7px 9px 11px 9px;
+    background: #E48952;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  .align-left{
+    text-align: left;
+  }
+
+  .align-center{
+    text-align: center;
+  }
+
+  .small-shield-img{
+    width: 25px;
+    height: 25px;
+    padding: 0px 10px 0 0;
+    position: inherit;
+    vertical-align: middle;
+  }
+
+  input:focus{
+    outline: none;
+  }
+
+  .woman-img{
+    width: 17.5rem;
+    width: -webkit-fill-available;
+  }
+
+  .claim-button{
+    color: #fff;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 12px 30px;
+    font-weight: 600;
+    border: 0 solid transparent;
+    background-color: #FF7139;
+  }
 
   @media (min-width: 376px) {
     .jumbotron-button{
@@ -396,7 +618,7 @@
 
     .newsletter-head{
       text-align: center;
-      font-size: 16px;
+      font-size: 25px;
       margin: 0;
       color: black;
     }
@@ -405,6 +627,11 @@
       text-align: center;
       font-size: 12px;
       padding: 7px 70px;
+    }
+
+    .about-values{
+      font-size: 18px; 
+      color: #fff
     }
 
     .mail{
@@ -445,6 +672,19 @@
       font-weight: normal;  
     }
 
+    .contact-us-details{
+      display: flex;
+    }
+
+    .insurance{
+      font-size: 30px;
+      font-weight: bold;
+      padding: 0px 40px;
+    }
+
+    .circle-num{
+      width: 9px;
+    }
 
     .about-img{
       background-repeat: no-repeat;
@@ -452,7 +692,6 @@
       height: 25em;
       width: 100%;
     }
-
    
     .footer{
         display: block;
@@ -474,11 +713,16 @@
 
   .aboutheader-para{
     color:#05101D;
-    padding: 0 150px; 
+    padding: 0px 60px; 
   }
 
   .sect{
     padding: 40px;
+  }
+
+  .contact-us-details {
+    display: flex;
+    padding: 0 40px;
   }
 
   .about-contain{
@@ -491,6 +735,10 @@
     flex-direction: row-reverse;
   }
 
+  .add-padding{
+    padding-right: 20px;
+  }
+
   .about-section{
     flex: 50% !important;
     box-sizing: border-box;
@@ -498,6 +746,36 @@
 
   .about-img{
     height: 100%;
+  }
+
+  .claim-img{
+    left: 0rem;
+    width: 20rem;
+    margin: 90px 0 0 0;
+  }
+
+  .correct{
+    width: 100%;
+  }
+
+  .loss-jare{
+    padding: 20px;
+  }
+
+  .reverse-mobile{
+    display: flex !important;
+    flex-direction: initial;
+  }
+
+  .insurance-img  {
+    width: 16rem;
+    height: 20rem;
+    padding-top: 2em;
+  }
+
+  .flex-out{
+    flex: 1 1 0;
+    margin: auto;
   }
 
   .jumbotron-h5{
@@ -510,8 +788,16 @@
     line-Height: 30px;
   }
 
-  .break{
+  .job-section{
+    gap: 20px;
+  }
 
+  .break{
+    display: none;
+  }
+
+  .calculator-div{
+    flex: 1 1 0;
   }
 
   .claim-card-container{
@@ -524,12 +810,24 @@
     flex: 1 1;
     box-sizing: border-box;
     margin: 0px;
+    padding: 10px;
+  }
+
+  .section-img{
+    display: flex;
   }
 
   .claim-header {
     text-align: left;
-    font-size: 27px;
-    padding: 40px 0px 0px;
+    font-size: 22px;
+    padding: 0 0 40px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 26px;
+  }
+
+  .margin-600{
+    margin: 60px 0px;
   }
 
   .claim-head{
@@ -553,6 +851,15 @@
     margin: 0;
   }
 
+  .cal-section{
+    display: flex;
+    gap: 40px;
+  }
+
+  .loss-para{
+    font-size: 12px;
+  }
+
   .added-gap{
     gap: 80px;
     margin: 0;
@@ -566,13 +873,34 @@
     text-align: left;
   }
 
+  .loss-jumbo-container{
+    display: flex;
+  }
+
   .claim-paragraph{
     text-align: left;
   }
 
+  .woman-img-div{
+    margin: auto;
+  }
+
+  .woman-img{
+    width: 14.5rem;
+  }
+
+  .resize-600{
+    width: 16rem;
+    height: 25em;
+    margin: auto;
+  }
+
+  .pad-600{
+    padding: 0;
+  }
+
   .let-talk-img{
     display: block;
-    margin: 80px;
     background-size: cover;
     background-position: center;
   }
@@ -599,7 +927,7 @@
   
 
   .footer{
-    display: flex;
+    display: block;
   }
 }
 
@@ -607,11 +935,11 @@
 @media (min-width: 768px) {
 
   .about_header__header{
-    padding: 0 160px;
+    padding: 0 128px;
   }
 
   .about_header__header ~ p{
-    padding: 0 300px;
+    padding: 0 60px;
     font-size: 13px;
   }
 
@@ -619,9 +947,23 @@
     padding: 20px 0
   }
 
+  .trustees-img > img {
+    width: 100px;
+  }
+
   .contact-us-details{
     display: flex;
     justify-content: space-around;
+  }
+
+  .trusted {
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .add-padding{
+    padding-right: 110px;
   }
 
   .claim-card-container {
@@ -629,6 +971,63 @@
     padding: 40px;
     grid-gap: 20px;
     gap: 20px;
+  }
+
+  .loss-jumbo-container{
+    display: flex;
+    padding: 40px 40px 0px 40px;
+  }
+
+  .cal-section{
+    display: flex;
+    grid-gap: 80px;
+    padding: 80px 40px 0px 40px;
+    gap: 80px;
+  }
+
+  .input-container{
+
+  }
+
+  .claim-card-container > div {
+    padding: 20px;
+  }
+
+  .loss-para{
+    font-size: 15px;
+  }
+
+  .woman-img-div{
+    margin: auto;
+  }
+
+  .approve-img-div{
+    margin: auto;
+  }
+
+  .calculator-div{
+    background: #FFFFFF;
+    box-shadow: 7.68831px 15px 30px rgb(26 34 56 / 8%);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px 0 40px 0px;
+    flex-basis: 150%;
+    flex-grow: 0;
+  }
+
+  .circle-num{
+    width: 8px;
+  }
+  
+  .job-section{
+    display: flex;
+    grid-gap: 80px;
+    padding: 0;
+    gap: 80px;
+  }
+
+  .woman-img{
+    width: 18.5rem;
   }
 
   .contact__container > p{
@@ -650,25 +1049,30 @@
 }
 
 
-@media (min-width: 1025px) {
+
+
+
+@media (min-width: 1024px) {
 
   .about_header__header{
-    padding: 0 300px;
+    padding: 0px 200px;
   }
 
   .about_header__header ~ p{
-    padding: 0 350px;
+    padding: 0 200px;
     font-size: 13px;
   }
 
   .about-contain{
     height: 25rem;
   }
+
   .navbar_logo-container{
     display: block !important;
     padding: 0;
     margin-left: -60px;
   }
+
 
   .jumbo_image{
     display: block;
@@ -678,9 +1082,102 @@
     bottom: -5px;
   }
 
+  .contact__container > p {
+    padding: 0 300px;
+  }
+
   .jumbo_image > img {
     width: 300px;
   }
+
+  .loss-jumbo-container{
+    padding: 40px 80px 0px 80px;
+    gap: 100px;
+    /* background-image: url('/src/assets/icons/Mask\ Group.png');
+    height: 30rem; */
+  }
+
+
+  .trusted {
+    font-size: 36px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+
+  .loss-jare{
+    padding-bottom: 40px;
+  }
+
+  .job-loss-img-div{
+    flex: 1 1 0;
+  }
+
+  .claim-img{
+    width: 30rem;
+    height: 23rem;
+  }
+
+  .job-loss-img{
+    width: 30rem;
+  }
+
+  .job-loss-card{
+    width: 25rem;
+  }
+
+  .job-section > div {
+    margin-top: 20px;
+  }
+
+  .calculator-div{
+    flex-basis: 100%;
+  }
+
+  .job-section{
+    padding: 40px 80px;
+  }
+
+  .cal-section{
+    padding: 80px 80px 0px 80px;
+    gap: 100px;
+  }
+
+  .claim-make{
+    flex: 1 1 0;
+  }
+
+  .insurance-img{
+    width: 25rem;
+    height: auto;
+  }
+
+  .approve-img-div{
+    flex: 1 1 0;
+    text-align: right;
+    margin: unset;
+  }
+
+  .claim-button{
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .reset{
+    width: 60%
+  }
+
+  .flex-out{
+    flex: 1 1 0;
+    margin: auto;
+  }
+
+  .trustees-div {
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+}
 
   .section-img{
     display: flex;
@@ -694,9 +1191,10 @@
   }
 
   .jumbotron-h5{
-    font-size: 48px;
+    font-size: 55px;
     font-weight: 400;
     width: 70%;
+    line-height: 60px;
     margin: 0px
   }
 
@@ -735,18 +1233,62 @@
     font-size: 12px;
   }
 
+  .calculator-div{
+    flex-basis: 100%;
+    /* margin: auto; */
+    width: 20rem; 
+  }
+  
+
   .card-wrap{
     text-align: left;
     margin: 0 30px;
   }
 
   .insurance{
-    font-size: x-large;
+    font-size: 40px;
+    /* font-size: x-large; */
     font-weight: bold;
   }
 
+  .job-section{
+    display: flex;
+    grid-gap: 80px;
+    padding: 0 40px;
+    grid-gap: 98px;
+    gap: 50px;
+  }
+
+  .loss-jumbo-container > div {
+    margin: auto;
+  }
+  
+  .loss-header{
+    font-size: 68px;
+    letter-spacing: 2px;
+    line-height: 70px;
+    width: 100%;
+  }
+
+  .loss-para{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .margin-600{
+    padding: 80px 40px;
+  }
+
+  .claim-make > .div{
+    margin: 20px 0;
+  }
+
+  .woman-img{
+    width: 22.5rem;
+  }
+
   .newsletter-head{
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Public Sans';
     font-weight: 700;
     margin: 60px 0px 0px 0px;
@@ -766,9 +1308,16 @@
     padding: 40px 0px;
   }
 
+  .claim-header{
+    letter-spacing: 1px;
+    font-size: 48px;
+    line-height: 58px;
+    /* margin-top: 2em; */
+  }
+
   .claim-card-container{
     padding: 40px 80px;
-    gap: 80px;
+    gap: 40px;
   }
 
   .claim-card-container > div {
@@ -789,8 +1338,19 @@
     padding: 0;
   }
 
+  .increase-1024{
+    width: 23rem;
+    height: auto;
+    text-align: right;
+  }
+
   .frequently{
-    font-size: 24px;
+    font-size: 48px;
+    padding-bottom: 18px;
+  }
+
+  .hassle-free{
+    padding: 60px 0px 0px 0px;
   }
 
   .newsletter-container{
@@ -813,12 +1373,99 @@
   .footer-bundle{
     flex: 1 1 0px;
   }
+}
 
 
+@media (min-width: 1300px) {
+  .about_header__header {
+    padding: 0px 300px;
+  }
+
+  .about_header__header ~ p {
+    padding: 0 320px;
+    font-size: 13px;
+  }
+
+  .about_header__header ~ p{
+    padding: 0 300px;
+    font-size: 14px;
+  }
+
+  .job-loss-img{
+    display: none;
+  }
+
+  .loss-jumbo-container{
+    padding: 40px 80px 0px 80px;
+    gap: 100px;
+    background-image: url('/src/assets/icons/Mask\ Group.png');
+    height: 30rem;
+  }
+
+  .jobloss-bcg{
+    background-image: url('/src/assets/icons/Mask Group(copy).png');
+  }
+
+  .travel-bcg{
+    background-image: url('/src/assets/icons/Mask Group(copy 1).png');
+  }
+
+  .claim-bcg{
+    background-image: url('/src/assets/icons/Mask Group(copy 2).png');
+  }
+
+  .one-of-equal{
+    position: relative;
+    top: -2em;
+  }
+
+  .loss-jumbo-container > div {
+    flex: 1 1 0
+  }
+
+
+  .calculator-div{
+    width: 24rem;
+  }
+
+  .padless{
+    margin: auto;
+  }
+
+  .increase-1024 {
+    width: 28rem;
+    height: 28rem;
+    text-align: right;
+  }
+
+  .solid-img {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  .about-contain {
+    height: 30rem;
+    margin: auto;
+  }
+
+  .added-pad{
+    padding: 80px
+  }
+
+  .about-values{
+    font-size: 30px; 
+    color: #fff
+  }
+
+  .provide_header {
+    font-size: 30px;
+  }
+
+}
 
   @-moz-document url-prefix() { 
     .jumbo_image {
        left: 38%;
     }
-  }
+  
 }

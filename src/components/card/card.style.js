@@ -3,16 +3,22 @@ import { theme } from "../GlobalStyle";
 
 
 export const Container = styled.div`
-    display: flex;
+    
     padding: 5px;
     margin: 30px 0px;
 
     @media(min-width: 376px){
-        display: flex;
-        margin: 40px 0;   
+        display: block;
+        margin: 40px 10px;   
     }
 
-    @media(min-width: 414){
+    @media(min-width: 414px){
+        display: block;
+        margin: 40px 0;
+        padding: 0 20px;
+    }
+
+    @media(min-width: 600px){
         display: flex;
         margin: 40px 0;
         padding: 0 20px;
@@ -56,16 +62,17 @@ export const Icon = styled.img`
     Opacity: 40%;
     margin: auto;
 
-    @media(min-width: 414){
+    @media(min-width: 414px){
         display: flex
     }
+
 ` 
 
 export const Header = styled.h6`
     margin: 0;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 18px;
     font-family: Public sans;
     padding-top: 12px;
 
@@ -85,7 +92,7 @@ export const Header = styled.h6`
     }
 
     @media(min-width: 1024px){
-        font-size: 15px;
+        font-size: 24px;
     }
 `
 
@@ -107,6 +114,10 @@ export const Text = styled.p`
 
     @media(min-width: 414){
         font-size: 12px
+    }
+
+    @media(min-width: 1025PX){
+        font-size: 14PX
     }
 `
     

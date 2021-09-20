@@ -3,6 +3,9 @@ import { theme } from "../components/GlobalStyle";
 import Footer from "../components/infoFooter";
 import FagQuestion from "../layouts/faqQuestions";
 import Navbar from '../layouts/TopBar'  
+import contactImg1 from '../assets/icons/Group 287.png'
+import contactImg2 from '../assets/icons/Group 288.png'
+import contactImg3 from '../assets/icons/Group 289.png'
 
 const Contact = () => {
     return (
@@ -17,7 +20,7 @@ const Contact = () => {
                 <div className='contact-us-details'>
                     <div>
                         <div  style={{textAlign: 'center'}}>
-                            icon
+                            <img src={contactImg1} alt='contact-img-1' />
                         </div>
                         <div>
                             <h6 className='visit'>Visit us</h6>
@@ -27,7 +30,7 @@ const Contact = () => {
                     </div>
                     <div>
                         <div style={{textAlign: 'center'}}>
-                            icon
+                            <img src={contactImg2} alt='contact-img-2' />
                         </div> 
                         <div>
                             <h6 className='visit'>Call us</h6>
@@ -37,7 +40,7 @@ const Contact = () => {
                     </div>
                     <div>
                         <div  style={{textAlign: 'center'}}>
-                            icon
+                            <img src={contactImg3} alt='contact-img-3' />
                         </div>
                         <div>
                             <h6 className='visit'>Email us</h6>
@@ -47,7 +50,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <FagQuestion />
+            <FagQuestion background='#fff' />
             <Footer />  
             
        </React.Fragment>

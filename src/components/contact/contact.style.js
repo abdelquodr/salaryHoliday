@@ -17,15 +17,25 @@ export const ContactContainer = styled.div`
     }
 
     @media(min-width: 600px){
-        grid-template-rows: 18vh;
+        grid-template-rows: 30vh;
         padding: 40px 26px;
-        grid-gap: 2.8em;
+        grid-gap: 2.3em;
+  
+    }
+
+    @media(min-width: 768px){
+        grid-template-rows: 20vh;
     }
 
 
     @media(min-width: 1024px){
-        display: flex
-        padding: 6px;
+        display: flex;
+        padding: 60px 80PX; 
+        grid-template-rows: 25vh;
+    }
+
+    @media(min-width: 1200px){
+        grid-template-rows: 30vh;
     }
 `
 
