@@ -1,0 +1,35 @@
+.navbar_logo-container{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+.navbar-icon{
+    /* bottom: -5; */
+    display: flex;
+}
+
+.align-phone{
+    display: block ruby;
+}
+
+.navbar-button{
+    color: #fff;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-top: -10px;
+    padding: 12px 15px;
+    font-weight: 600;
+    border: 0 solid transparent;
+    background-color: #FF7139;
+    bottom: -5px;
+}
+
+@media (min-width: 414px) {
+    .navbar_logo-container{
+        padding: 0 36px; 
+    }
+
+}
