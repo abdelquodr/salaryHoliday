@@ -3,40 +3,40 @@ import React from "react";
 
 const CompleteKYC = () => {
     return(
-            <div>
-                <h3>You made the right choice, kindly <span>provide the personal details</span> below:</h3>
+            <div className='kyc-container'>
+                <h3 className='preview-header'>You made the right choice, kindly <span style={{color: '#FF7139'}}>provide the personal details</span> below:</h3>
     
-                <div>
-                    <div>
-                        <div>
-                            <small>what's your full name</small>
+                <div className='form-container'>
+                    <div className='input-flex'>
+                        <div className='preview-input-container'>
+                            <small className='small'>What's your full name</small>
                             <input placeholder='Abiola usman' />
                         </div>
-                        <div>
-                            <small>Email Address</small>
+                        <div className='preview-input-container'>
+                            <small className='small'>Email Address</small>
                             <input placeholder='Abiola@gmail.com' />
                         </div>
                     </div>
 
-                    <div>
-                        <div>
-                            <small>Password</small>
+                    <div className='input-flex'>
+                        <div className='preview-input-container'>
+                            <small className='small'>Password</small>
                             <input type='password' />
                         </div>
-                        <div>
-                            <div>
-                                <small>Age</small>
+                        <div className='input-flex'>
+                            <div className='preview-input-container'>
+                                <small className='small'>Age</small>
                                 <input type='number' placeholder='DD' />
                             </div>
-                            <div>
-                                <small>Gender</small>
+                            <div className='preview-input-container'>
+                                <small className='small'>Gender</small>
                                 <select>
                                     <option>Male</option>
                                     <option>Female</option>
                                     <option>Unknown</option>
                                 </select>
                             </div>
-                            <div>
+                            <div className='preview-input-container'>
                                 <small>Marital Status</small>
                                 <select>
                                     <option>Single</option>
@@ -47,34 +47,34 @@ const CompleteKYC = () => {
                      </div>   
                     <div>
                         <div>
-                            <div>
-                                <small>Grade Level</small>
+                            <div className='preview-input-container'>
+                                <small className='small'>Grade Level</small>
                                 <input placeholder='eg IT,Telecom' />
                             </div>
-                            <div>
-                                <small>Qualification</small>
+                            <div className='preview-input-container'>
+                                <small className='small'>Qualification</small>
                                 <input placeholder='eg Bachelor Degree' />
                             </div>
                         </div>
-                        <div>
-                            <small>Company Industry</small>
+                        <div className='preview-input-container'>
+                            <small className='small'>Company Industry</small>
                             <input placeholder='' />
                         </div>
                     </div>
                     <div>
-                        <div>
-                            <small>Number of jobs changed in the last five years</small>
+                        <div className='preview-input-container'>
+                            <small className='small'>Number of jobs changed in the last five years</small>
                             <input type='number' placeholder='3' />
                         </div>
-                        <div>
-                            <small>Inpairment (Any dusability?).if yes; kndly specify</small>
+                        <div className='preview-input-container'>
+                            <small className='small'>Inpairment (Any dusability?).if yes; kndly specify</small>
                             <input placeholder='' />
                         </div>
                     </div>
 
                     <div>
-                        <button>Back</button>
-                        <button>Complete and Make Payment</button>
+                        <button className='premium-button' style={{backgroundColor:'#7C7D7E', marginBottom: '20px'}}>Back</button>
+                        <button className='premium-button'>Complete and Make Payment</button>
                     </div>
                 </div>
             </div>    

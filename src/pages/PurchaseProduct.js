@@ -11,8 +11,8 @@ const ProductPurchase = () => {
             <TopBar />
             <div>
                 <div>
-                    <div>
-                        <ul>
+                    <div className='overflow-purchase'>
+                        <ul className='purchase-list'>
                             <li>Preview Plan</li>
                             <li>Complete KYC</li>
                             <li>Make Payment</li>

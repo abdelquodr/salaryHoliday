@@ -1,0 +1,324 @@
+.purchase-list::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.purchase-list{
+    list-style: none;
+    display: flex;
+    /* overflow-x: scroll; */
+    padding-bottom: 8px;
+    width: 150%;
+    text-align: center;
+    border-bottom: 1px solid #E2E4EA;
+}
+
+.purchase-list > li{
+    word-break: keep-all;
+    font-size: 14px;
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.preview-header{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.benefit{
+    padding: 10px 20px 20px 20px;
+    margin: 20px;
+    border: 2px solid #00B49B;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit-P{
+    margin: 0;
+    padding: 10px 0;
+}
+
+.plan-head{
+    margin: 0;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 0;
+    align-items: center;
+    text-align: right;
+    color: #00B49B;
+}
+
+.benefit-head{
+    margin: 0;
+    padding: 10px 0;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #0E1525;
+}
+
+.small{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: rgba(14, 21, 37, 0.5);
+}
+
+.premium-cover-div{
+    background: #FFFFFF;
+    border: 1px solid #D9DDE2;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.premium-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.premium-flex > p{
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    margin: 0;
+    padding-top: 3px;
+    color: rgba(14, 21, 37, 0.5);
+}
+
+.premium-value{
+    margin: 0;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: right;
+    color: #0E1525;
+}
+
+.payment-button-div{
+    padding: 0 20px;
+}
+
+.payment-button{
+    position: initial;
+    margin: 80px 0px;
+}
+
+.premium-button {
+    background: #FF7139;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid transparent;
+    color: #fff;
+}
+
+.complete-button{
+    margin: 30px 0px
+}
+
+.align-right{
+    text-align: right;
+}
+
+.form-container{
+    padding: 0 20px;
+}
+
+.preview-input-container{
+    background: #FFFFFF;
+    border: 1px solid #D9DDE2;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 20px 0px;
+    padding: 0px 20px;
+}
+
+.preview-input-container > input, 
+.preview-input-container > select{
+    display: block;
+    border: none;
+    padding: 8px 0px;
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #0D0A19;
+    background: #fff;
+}
+
+select:focus, input:focus{
+    outline: none;
+}
+
+.make-para{
+    word-break: keep-all;
+    overflow: hidden;
+    margin: 0 20px;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(14, 21, 37, 0.5);
+}
+
+.payment-card{
+    position: relative;
+    margin: 60px auto 0px auto;
+}
+
+.payment-header-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 12em;
+    height: 2.7em;
+    background: #FFFFFF;
+    box-shadow: 7.68831px 15px 30px rgb(26 34 56 / 8%);
+    border-radius: 10px;
+    margin: 20px auto;
+    position: absolute;
+    top: -3em;
+    z-index: 1;
+    left: 4em;
+}
+
+.visa-img{
+    width: 25px;
+    height: 25px;
+}
+
+.lock-img{
+    width: 8em;
+}
+
+.payment-header-card > div{
+    display: flex;
+}
+
+.payment-card-main{
+    /* position: relative; */
+    top: 3em;
+    padding: 4.5em 20px 20px 20px;
+    width: 16em;
+    margin: 0 auto;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 7.68831px 15px 30px rgb(26 34 56 / 8%);
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+.payment-header-card > p{
+    padding: 5px 0px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.complete-div{
+    padding: 20px;
+}
+ 
+.overflow-purchase{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+}
+
+.overflow-purchase::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+
+::-webkit-input-placeholder { /* Edge */
+    color:#0D0A19
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #0D0A19
+  }
+  
+  ::placeholder {
+    color:#0D0A19
+  }
+  
+
+
+@media (min-width: 600px) {
+    .preview-plan-container{
+        width: 75%;
+        margin: auto;
+    }
+
+    .kyc-container {
+        width: 75%;
+        margin: auto;
+    }
+
+    .preview-header {
+        font-size: 30px;
+    }
+
+    .make-payment-para{
+        width: 75%;
+        margin: auto;
+    }
+
+    .complete-div{
+        width: 75%;
+        margin: auto;
+    }
+    
+
+    /* .input-flex{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    } */
+
+    .input-flex.preview-input-container{
+        width: fit-content;
+        flex: 1 1 0;
+    }
+
+    .premium-button{
+        padding: 13px;
+    }
+
+    .payment-header-card{
+        top: -3em;
+        left: 6.5em;
+    }
+
+  }
+
+
+  @media (min-width: 768px) {
+    .payment-header-card {
+        top: -3em;
+        left: 10.5em;
+    }
+  }
+
+
+  @media (min-width: 1024px) {
+    .preview-plan-container {
+        width: 50%;
+        margin: auto;
+    }
+  }
