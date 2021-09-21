@@ -20,6 +20,12 @@
 }
 
 /***************************** AVATAR STYLES **************************/
+.avatar-nav-section {
+  display: flex;
+  padding: 0 20px;
+  background-color: #fff;
+  justify-content: space-between;
+}
 
 .avatar-button {
     padding: 10px;
@@ -280,6 +286,54 @@
   border: none;
   padding: 10px;
   background: transparent;
+}
+
+/*************************** SIDE BAR SECTION **************************/
+
+.side-nav-icons {
+  display: flex;
+  justify-content: left;
+}
+.side-icons {
+  margin-right: 10px;
+}
+.terms-container {
+  display: grid;
+  background-color: #fff;
+  grid-template-columns: 17% 1fr;
+}
+ul .grey-text::marker {
+  list-style-type: square;
+  color: #25a18e;
+  font-size: 34px;
+}
+.terms-nav-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.terms-content {
+  /* margin: 0 100px; */
+}
+
+p > b {
+  color: #111;
+}
+
+.terms-nav-items {
+  cursor: pointer;
+}
+.complaints {
+  color: #00509d;
+}
+@media only screen and (max-width: 800px) {
+  .terms-container {
+    grid-template-columns: 1fr;
+  }
+}
+.subs {
+  font-family: Montserrat;
 }
 
 /***************************** MEDIA QUERIES ***************************/
