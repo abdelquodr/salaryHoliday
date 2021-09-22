@@ -5,7 +5,7 @@ import shape from '../../assets/icons/Shape.png';
 import paymentTo from '../../assets/icons/payment to.png'
 
 
-const MakePayment = () => {
+const   MakePayment = () => {
     return (
         <div className='make-payment-div'>
             <h3 className='preview-header'>You made the right choice, kindly <span style={{color: '#FF7139'}}>provide the personal details</span> below:</h3>

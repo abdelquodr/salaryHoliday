@@ -7,7 +7,12 @@ import contactImg1 from '../assets/icons/Group 287.png'
 import contactImg2 from '../assets/icons/Group 288.png'
 import contactImg3 from '../assets/icons/Group 289.png'
 
-const Contact = () => {
+const Contact = (props) => {
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [props.location]);
+
     return (
        <React.Fragment>
            <Navbar />

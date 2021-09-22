@@ -13,7 +13,12 @@ import group1 from '../assets/icons/Group.svg'
 import group2 from '../assets/icons/Group (1).svg'
 import group3 from '../assets/icons/Group 280.svg'
 
-const About = ( ) => {
+const About = ( props ) => {
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [props.location]);
+    
     return (
         <React.Fragment>
             <Navbar />

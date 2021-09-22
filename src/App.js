@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -16,8 +16,8 @@ import Travel from './pages/Travel';
 import ProductPurchase from './pages/PurchaseProduct'
 
 
-console.log(Jobloss)
-function App() {
+function App(props) {
+
   return (
     <Router>
       <Switch>
@@ -29,9 +29,10 @@ function App() {
         <Route exact path='/jobloss-insurance' component={ Jobloss } ></Route>
         <Route exact path='/car-insurance' component={ Car }></Route>
         <Route exact path='/travel-insurance' component={ Travel }></Route>
-        <Route exact path='/product-purchase' component={ProductPurchase}></Route>
+        <Route exact path='/product-purchase' component={ ProductPurchase }></Route>
       </Switch>
     </Router>
+    
   );
 }
 

@@ -12,7 +12,12 @@ import HowItWorks from '../layouts/HowItWork'
 import car from '../assets/icons/Group 1000002073 (2).png'
 import smallCar from '../assets/icons/Icon (1).png'
 
-const Car = () => {
+const Car = (props) => {
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [props.location]);
+
     return (
         <React.Fragment>
             <Navbar />

@@ -12,7 +12,12 @@ import HowItWorks from '../layouts/HowItWork'
 import smalltravel from '../assets/icons/Icon (1)(copy).png'
 import travel from '../assets/icons/Group 1000002068 (1).png'
 
-const Travel = () => {
+const Travel = ( props ) => {
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [props.location]);
+
     return (
         <React.Fragment>
             <Navbar />

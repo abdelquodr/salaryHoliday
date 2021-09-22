@@ -4,7 +4,12 @@ import NewLetter from "../layouts/newsLetter";
 import Navbar from '../layouts/TopBar'
 import ContactSection from "../layouts/contact";
 
-const Faq = ( ) => {
+const Faq = ( props ) => {
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [props.location]);
+
     return (
         <React.Fragment>
             <Navbar />

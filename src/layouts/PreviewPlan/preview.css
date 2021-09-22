@@ -256,6 +256,12 @@ select:focus, input:focus{
   }
   
 
+@media (min-width: 400px) {
+    .payment-header-card{
+        left: 5em;
+    }
+}
+
 
 @media (min-width: 600px) {
     .preview-plan-container{
@@ -272,7 +278,7 @@ select:focus, input:focus{
         font-size: 30px;
     }
 
-    .make-payment-para{
+    .make-payment-div{
         width: 75%;
         margin: auto;
     }
@@ -281,15 +287,6 @@ select:focus, input:focus{
         width: 75%;
         margin: auto;
     }
-    
-
-    /* .input-flex{
-        display: flex;
-        gap: 20px;
-        justify-content: space-between;
-        margin: 0;
-        padding: 0;
-    } */
 
     .input-flex.preview-input-container{
         width: fit-content;
@@ -313,6 +310,25 @@ select:focus, input:focus{
         top: -3em;
         left: 10.5em;
     }
+
+    .purchase-list {
+        list-style: none;
+        display: flex;
+        /* overflow-x: scroll; */
+        justify-content: space-between;
+        padding: 0px 40px 8px 40px;
+        border-bottom: 1px solid #E2E4EA;
+    }
+
+    .overflow-purchase::-webkit-scrollbar {
+        display: none;
+      }
+      
+      /* Hide scrollbar for IE, Edge add Firefox */
+      .overflow-purchase {
+        -ms-overflow-style: none;
+        scrollbar-width: none; /* Firefox */
+      }
   }
 
 
@@ -321,4 +337,44 @@ select:focus, input:focus{
         width: 50%;
         margin: auto;
     }
+
+    .payment-header-card {
+        top: -4em;
+        left: 8.5em;
+    }
+
+    .make-payment-div{
+        width: 50%;
+        margin: auto
+    }
+
+    .complete-div{
+        width: 50%;
+        margin: auto;
+    }
+
+    .input-flex{
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .preview-input-container {
+        flex: 1 1 0;
+        padding: 0px 15px;
+    }
+
+    @media(min-width: 1200px){
+        .payment-header-card {
+            top: -4em;
+            left: 13.2em;
+        }
+
+        .kyc-container{
+            width: 50%;
+            margin: auto;
+        }
+    }
+
   }
+

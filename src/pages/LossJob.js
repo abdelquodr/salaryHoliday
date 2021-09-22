@@ -10,7 +10,12 @@ import approve from '../assets/icons/image.png'
 import globe from '../assets/icons/globe.png'
 import HowItWorks from '../layouts/HowItWork'
 
-const LossJob = () => {
+const LossJob = (props) => {
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [props.location]);
+
     return (
         <React.Fragment>
             <Navbar />

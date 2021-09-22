@@ -37,7 +37,7 @@ const CompleteKYC = () => {
                                 </select>
                             </div>
                             <div className='preview-input-container'>
-                                <small>Marital Status</small>
+                                <small className='small'>Marital Status</small>
                                 <select>
                                     <option>Single</option>
                                     <option>Married</option>
@@ -45,8 +45,8 @@ const CompleteKYC = () => {
                             </div>
                         </div>
                      </div>   
-                    <div>
-                        <div>
+                    <div className='input-flex'>
+                        <div className='input-flex'>
                             <div className='preview-input-container'>
                                 <small className='small'>Grade Level</small>
                                 <input placeholder='eg IT,Telecom' />
@@ -61,7 +61,7 @@ const CompleteKYC = () => {
                             <input placeholder='' />
                         </div>
                     </div>
-                    <div>
+                    <div className='input-flex'>
                         <div className='preview-input-container'>
                             <small className='small'>Number of jobs changed in the last five years</small>
                             <input type='number' placeholder='3' />
@@ -72,8 +72,8 @@ const CompleteKYC = () => {
                         </div>
                     </div>
 
-                    <div>
-                        <button className='premium-button' style={{backgroundColor:'#7C7D7E', marginBottom: '20px'}}>Back</button>
+                    <div className='input-flex'>
+                        <button className='premium-button' style={{backgroundColor:'#7C7D7E'}}>Back</button>
                         <button className='premium-button'>Complete and Make Payment</button>
                     </div>
                 </div>
