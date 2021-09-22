@@ -1,6 +1,6 @@
 import React from "react"
 import  Footer from '../components/infoFooter'
-import Navbar from "../layouts/TopBar"
+import Navbar from '../components/navbar'
 import NewLetter from "../layouts/newsLetter"
 import { theme } from "../components/GlobalStyle"
 import Shield from '../assets/images/shield.png'

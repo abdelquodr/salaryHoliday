@@ -4,12 +4,14 @@ import { theme } from "../GlobalStyle";
 
 export const Container = styled.div`
     
-    padding: 5px;
     margin: 30px 0px;
 
     @media(min-width: 376px){
         display: block;
         margin: 40px 10px;   
+        display: flex;
+        margin: 70px 0;
+        padding: ${ theme.body.space }
     }
 
     @media(min-width: 414px){
@@ -39,17 +41,9 @@ export const Card = styled.div`
     margin-left: 10px;
     text-align: center;
     
-    @media( min-width: 414px){
+    @media( min-width: 376px){
         /* display: flex;  */
        justify-content: space-between;
-    }
-
-    @media(min-width: 1024px){
-        display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        padding: 30px;
     }
 `
 
@@ -60,6 +54,9 @@ export const Icon = styled.img`
     Top: 1008px;
     Left: 125px;
     Opacity: 40%;
+
+
+    @media(min-width: 376){
     margin: auto;
 
     @media(min-width: 414px){
@@ -73,8 +70,17 @@ export const Header = styled.h6`
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    font-family: Public sans;
-    padding-top: 12px;
+    font-size: 14px;
+    line-height: 32px;
+
+    @media(min-width){
+        font-style: normal;
+        font-weight: 600;
+        font-size: ${ theme.font.fontSmall };
+        line-height: 32px;
+        font-size: 12px;
+        font-family: Public sans;
+        padding-top: 12px;
 
     @media(min-width: 376px){
         font-style: normal;
@@ -93,12 +99,14 @@ export const Header = styled.h6`
 
     @media(min-width: 1024px){
         font-size: 24px;
+        font-size: 15px;
     }
 `
 
 export const Text = styled.p`
     font-style: normal;
     font-weight: normal;
+    font-size: 10px;
     font-size: 11px;
     line-height: 12px;
     opacity: 0.7;

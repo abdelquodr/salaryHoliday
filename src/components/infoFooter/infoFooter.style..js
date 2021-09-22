@@ -23,8 +23,6 @@ export const ContactContainer = styled.div`
 
 
 
-
-
 export const Header = styled.h6`
     color: #fff; 
     font-size: 16px;

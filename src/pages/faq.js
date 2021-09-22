@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/infoFooter";
 import NewLetter from "../layouts/newsLetter";
-import Navbar from '../layouts/TopBar'
+import Navbar from '../components/navbar'
 import ContactSection from "../layouts/contact";
 
 const Faq = ( props ) => {
