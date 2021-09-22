@@ -3,7 +3,7 @@ import Navbar from "../../components/navbar";
 import Logo from '../../assets/images/salaryHolidayLogo.svg'
 import phone from '../../assets/images/phone.svg'
 import { NavLink } from 'react-router-dom';
-// import '../../components/navbar/navbar.css'
+import '../../components/navbar/navbar.css'
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "gsap/all";
 
 // don't forget to register plugins
@@ -108,6 +108,7 @@ const TopBar = () => {
                         <Navbar.Item > Company - </Navbar.Item> 
                     </NavLink>    
 
+                        <NavLink to='/claim' activeStyle={{color: '#E48952'}}>
                         <Navbar.Item onClick={handlClaimClick} > Make a claim - </Navbar.Item>
                         { showClaim && 
                         <div className='dropdown'>
@@ -117,6 +118,7 @@ const TopBar = () => {
                                 </NavLink>
                             </ul>
                         </div>  } 
+                    </NavLink> 
                 </Navbar.ListItem>
 
                 <Navbar.ListItem >

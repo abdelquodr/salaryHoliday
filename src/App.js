@@ -10,6 +10,7 @@ import About from './pages/About'
 import Contact from './pages/Contact';
 import Faq from './pages/faq'
 import ClaimHistory from './pages/ClaimHistory';
+import Claim from './pages/Claim'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path='/faq' component={ Faq }></Route>
         <Route exact path='/claim-history' component={ ClaimHistory }></Route>
 
+        <Route exact path='/claim' component={ Claim}></Route> 
       </Switch>
     </Router>
   );
