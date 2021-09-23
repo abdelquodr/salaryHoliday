@@ -23,6 +23,7 @@ function claimHistory() {
 			});
 		}
 	};
+    
     return (
         <React.Fragment>
             <div className="page-div">
@@ -101,6 +102,9 @@ function claimHistory() {
 						Settings
 					</p>
                     </div>
+                    <button class="icon">
+                        <i class="fa fa-bars"></i>
+                    </button>
 				</div>
 
             
