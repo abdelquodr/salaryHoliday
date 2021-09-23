@@ -318,7 +318,7 @@ ul .grey-text::marker {
 }
 
 @media screen and (max-width: 768px) {
-  .terms-nav-content .side-nav-icons:not(:first-child) {display: none;}
+  .terms-nav-content .side-nav-icons:not(.clm) {display: none;}
   .terms-nav-content .side-nav-icons {
     float: right;
     display: block;
@@ -340,7 +340,7 @@ ul .grey-text::marker {
 }
 
 @media screen and (max-width: 600px) {
-  .terms-nav-content .side-nav-icons:not(:first-child) {display: none;}
+  .terms-nav-content .side-nav-icons:not(.clm) {display: none;}
   .terms-nav-content .side-nav-icons {
     float: right;
     display: block;

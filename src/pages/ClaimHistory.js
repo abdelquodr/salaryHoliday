@@ -62,7 +62,7 @@ function claimHistory() {
 						My Policies
 					</p>
                     </div>
-                    <div className="side-nav-icons">
+                    <div className="side-nav-icons clm">
                     <img src={claim} alt="claim" className="side-icons" />
 					<p
 						className="grey-text terms-nav-items subs side-icons-para"

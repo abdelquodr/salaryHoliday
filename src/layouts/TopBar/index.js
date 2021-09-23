@@ -84,6 +84,9 @@ const TopBar = () => {
                     <NavLink to='/claim' activeStyle={{color: '#E48952'}}>
                         <Navbar.Item > Make a claim - </Navbar.Item>
                     </NavLink> 
+                    <NavLink to='/claim-history' activeStyle={{color: '#E48952'}}>
+                        <Navbar.Item >Claimhistory </Navbar.Item>
+                    </NavLink> 
                 </Navbar.ListItem>
 
                 <Navbar.ListItem >
