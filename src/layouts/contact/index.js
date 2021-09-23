@@ -15,7 +15,7 @@ const ContactSection = () => {
         </Contact.EmailContainer>
         <Contact.SocialContainer>
             <Contact.ContactHeader>Socials</Contact.ContactHeader>
-            <Contact.ContactText>if you have other questions, our social account are message away</Contact.ContactText>
+            <Contact.ContactText>If you have other questions, our social account are message away</Contact.ContactText>
             <Contact.ContactText>+2348037362672</Contact.ContactText>
         </Contact.SocialContainer>    
     </Contact>

@@ -11,11 +11,18 @@ export const Button = styled.button`
     font-weight: 600;
     border: 0 solid transparent;
 
-    @media(min-width: 376px){
-        padding: ${({space}) => space ? space : '0px 20px'};    
+    @media(min-width: 376px){  
         color:  ${ theme.color.white } ;
         border-radius: 8px;
-        font-size: ${ theme.font.fontXtraSmall };
+        font-size: 12px;
+        margin-top: 10px;
+        padding: 12px 15px;
+    }
+
+    @media(min-width: 414){
+        font-size: 12px;
+        padding: 14px 14px;
+        margin-top: 12px;
     }
  ;
 
