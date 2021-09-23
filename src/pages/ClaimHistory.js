@@ -29,11 +29,12 @@ function claimHistory() {
             <div className="page-div">
                     {/*********************AVATAR SECTION *************************/}
         <div className="avatar-nav-section">
+            <div className="avatar-image-section">
             <img src={salaryHolidayLogo} alt="claim history logo" />
+            </div>
 
-            <div className="avatar-button">
+            <div className="avatar-section">
                     <i class="fa fa-bell avatarbell"></i>      
-
                     <i class="fa fa-user-circle avataruser"></i>
             </div>
         </div>
