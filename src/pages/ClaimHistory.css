@@ -16,7 +16,6 @@
 }
 
 .page-div {
-  width: 100%;
   background-color: #E5E5E5;
 }
 
@@ -419,7 +418,6 @@ ul .grey-text::marker {
     top: 0;
   }
   .avatar-nav-section {
-    width: 180vw;
     padding: 20px;
     display: flex;
     justify-content: space-between;
