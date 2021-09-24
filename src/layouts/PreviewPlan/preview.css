@@ -8,6 +8,7 @@
     display: flex;
     /* overflow-x: scroll; */
     padding-bottom: 8px;
+    justify-content: space-between;
     width: 150%;
     text-align: center;
     border-bottom: 1px solid #E2E4EA;
@@ -16,8 +17,9 @@
 .purchase-list > li{
     word-break: keep-all;
     font-size: 14px;
-    overflow: hidden;
-    margin: 0 20px;
+    padding: 0px 20px;
+    /* overflow: hidden; */
+    /* margin: 0 20px; */
 }
 
 .preview-header{
@@ -121,6 +123,11 @@
     width: 100%;
     border: 2px solid transparent;
     color: #fff;
+}
+
+.back-button{
+    background-color: rgb(124, 125, 126);
+    margin-bottom: 20px;
 }
 
 .complete-button{
@@ -237,10 +244,22 @@ select:focus, input:focus{
     scrollbar-width: none; 
 }
 
+.signin-container{
+    
+}
+
 .overflow-purchase::-webkit-scrollbar {
     display: none;
   }
+
+ .kyc-container{
+    padding-bottom: 3em;
+ } 
   
+ .view-background{
+    padding-bottom:3em
+ }
+
 
 
 ::-webkit-input-placeholder { /* Edge */
@@ -266,6 +285,7 @@ select:focus, input:focus{
 @media (min-width: 600px) {
     .preview-plan-container{
         width: 75%;
+        padding-bottom: 2em;
         margin: auto;
     }
 
@@ -302,22 +322,56 @@ select:focus, input:focus{
         left: 6.5em;
     }
 
+    .view-background{
+        
+        padding-top: 50px
+    }
+
   }
 
 
   @media (min-width: 768px) {
     .payment-header-card {
         top: -3em;
-        left: 10.5em;
+        left: 9em;
     }
 
     .purchase-list {
         list-style: none;
         display: flex;
-        /* overflow-x: scroll; */
-        justify-content: space-between;
-        padding: 0px 40px 8px 40px;
+        overflow-x: scroll;
+        justify-content: center;
+        padding: 0;
         border-bottom: 1px solid #E2E4EA;
+        width: auto;
+        margin: 18px auto;
+        text-align: center;
+    }
+
+    .cover-card{
+        width: 90%;
+        margin: auto;
+        box-shadow: 4px 14px 14px #f8f8f8;
+        padding-top: 20px;
+        border: 1px solid #f8f8f8;
+        border-radius: 25px;
+        background-color: #fff;
+    }
+
+    .kyc-container {
+        padding: 0px 0px 4em 0px;
+        margin: auto;
+        background: #fff;
+        border-radius: 30px;
+    }
+
+    .preview-header{
+        margin: 0
+    }
+
+    .view-background{
+        background: #F8F8F8;
+        padding-bottom: 4em;
     }
 
     .overflow-purchase::-webkit-scrollbar {
@@ -340,7 +394,7 @@ select:focus, input:focus{
 
     .payment-header-card {
         top: -4em;
-        left: 8.5em;
+        left: 4em;
     }
 
     .make-payment-div{
@@ -348,9 +402,24 @@ select:focus, input:focus{
         margin: auto
     }
 
+    html, body{
+        background-color: #f8f8f8;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .cover-card{
+        width: 70%;   
+    }
+
     .complete-div{
         width: 50%;
         margin: auto;
+    }
+
+    .back-button{
+        background-color: rgb(124, 125, 126);
+        margin-bottom: 0px;
     }
 
     .input-flex{
@@ -364,6 +433,8 @@ select:focus, input:focus{
         padding: 0px 15px;
     }
 
+}
+
     @media(min-width: 1200px){
         .payment-header-card {
             top: -4em;
@@ -371,10 +442,14 @@ select:focus, input:focus{
         }
 
         .kyc-container{
-            width: 50%;
+            width: 75%;
             margin: auto;
         }
+
+        .payment-header-card{
+            left: 7.5em;
+        }
+
     }
 
-  }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/infoFooter";
 import NewLetter from "../layouts/newsLetter";
-import Navbar from '../components/navbar'
+import Navbar from "../layouts/TopBar";
 import ContactSection from "../layouts/contact";
 
 const Faq = ( props ) => {
@@ -22,8 +22,8 @@ const Faq = ( props ) => {
 
                 <div className='section'>
                     
-                    <div>
-                        <ul className='select-insurance'>
+                    <div className='overflow-purchase'>
+                        <ul className='purchase-list'>
                             <li>General</li>
                             <li>Car Insurance</li>
                             <li>Job loss Insurance</li>

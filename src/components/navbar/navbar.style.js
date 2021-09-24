@@ -7,6 +7,7 @@ export const Container = styled.div`
     display: block ruby;
     margin: 10px 20px 0px 20px;
     justify-content: space-between; 
+    backround-color: #fff;
 
     @media (min-width: 376px){
         padding: 20px 50px;
@@ -23,16 +24,18 @@ export const Container = styled.div`
     }
 
     @media(min-width: 768px){
-        margin: 10px 10px 0px 10px;
-        padding: 5px 0px 0px 5px;
+        margin: 0px;
+        padding: 15px 0px 0px 35px;
     }
+        
 `;
 
 export const ListItem = styled.ul`
-    flex-direction: row;
-    display: none;
-    list-style: none;
-    padding: 0 15px;
+        // flex-direction: row;
+        // display: none;
+        // list-style: none;
+        // padding: 0 15px;
+    
 
     @media (min-width: 376px){
         display: none;
@@ -52,6 +55,9 @@ export const ListItem = styled.ul`
         display: flex;
         gap: 20px;
         flex-direction: row;
+        position: inherit;
+        border: 0;
+        box-shadow: transparent
     }
  
 `;

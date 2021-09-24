@@ -143,6 +143,27 @@
     font-weight: normal;
   }
 
+  .mobile-navigation{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0;
+        top: 2em;
+        padding: 10px 0;
+        flex-direction: column;
+        box-shadow: 0px 12px 16px -4px #f8f8f8;
+        border: 1px solid #f8f8f8;
+        position: absolute;
+        top: 4em;
+        left: 50%;
+        background: #fff;
+        border-radius: 6px;
+  }
 
   .contact__container{
     padding: 0px;

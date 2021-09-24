@@ -90,7 +90,7 @@ const TopBar = () => {
 
             <Navbar.NavbarIcon />  
 
-            <Navbar.ListItem>
+            <Navbar.ListItem className='mobile-navigation'>
                 <Navbar.ListItem >
                         <Navbar.Item onClick={handleProductClick} > Products - </Navbar.Item> 
                     { showProduct && 

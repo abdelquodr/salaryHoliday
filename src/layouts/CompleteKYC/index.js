@@ -73,7 +73,7 @@ const CompleteKYC = () => {
                     </div>
 
                     <div className='input-flex'>
-                        <button className='premium-button' style={{backgroundColor:'#7C7D7E'}}>Back</button>
+                        <button className='premium-button back-button'>Back</button>
                         <button className='premium-button'>Complete and Make Payment</button>
                     </div>
                 </div>

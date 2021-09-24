@@ -14,7 +14,7 @@ import Claim from './pages/Claim'
 import Jobloss from './pages/LossJob';
 import Car from './pages/Car';
 import Travel from './pages/Travel';
-import ProductPurchase from './pages/PurchaseProduct'
+import ProductPurchase from './pages/PurchaseProduct';
 
 
 function App(props) {
@@ -26,13 +26,12 @@ function App(props) {
         <Route exact path='/about' component={ About }></Route>
         <Route exact path='/contact' component={ Contact }></Route>
         <Route exact path='/faq' component={ Faq }></Route>
-        <Route exact path='/claim-history' component={ ClaimHistory }></Route>
-
         <Route exact path='/claim' component={ Claim}></Route> 
         <Route exact path='/jobloss-insurance' component={ Jobloss } ></Route>
         <Route exact path='/car-insurance' component={ Car }></Route>
         <Route exact path='/travel-insurance' component={ Travel }></Route>
         <Route exact path='/product-purchase' component={ ProductPurchase }></Route>
+        <Route exact path='/dashboard' component={ ClaimHistory }></Route>
       </Switch>
     </Router>
     

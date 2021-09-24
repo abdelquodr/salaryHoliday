@@ -8,11 +8,10 @@ import claim from '../assets/images/claims-icon.svg'
 import document from '../assets/images/document-icon.svg'
 import payment from '../assets/images/payment-icon.svg'
 import settings from '../assets/images/settings-icon.svg'
-
 import Button from '../components/button'
 
 
-function claimHistory() {
+function ClaimHistory() {
     const scrollTo = (id) => () => {
 		const scrollToSection = document.getElementById(id);
 		if (scrollToSection) {
@@ -331,4 +330,4 @@ const customButtonOutline = {
   color: 'orange',
 }
 
-export default claimHistory
+export default ClaimHistory
