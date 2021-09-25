@@ -1,18 +1,31 @@
 /************************** CLAIM HISTORY STYLES ***************************/
+*{
+  font-family: Public Sans;
+}
 
 .table-header {
   text-align: left;
-  padding: 0 10px;
   color: #ccc;
   width: 20%;
   border-collapse: collapse;
-}
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  }
 
 .table-data {
-  border-collapse: collapse;
-  font-weight: medium;
-  padding: 0 15px 45px 15px;
-  width: 20%;
+  padding: 0 0px 30px 0px;
+  /* width: 20%; */
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  /* line-height: 20px; */
+  /* display: flex; */
+  align-items: center;
+  color: #374151;
 }
 
 .page-div {
@@ -49,22 +62,20 @@
 }
 
 .client-profile {
-  padding: 20px;
+  /* padding: 20px; */
   text-align: left;
   align-items: center;
 }
 /********************** CUSTOM BAR STYLES SECTION  *******************/
 
 .custom-nav {
-    width: 100%;
-    display: flex;
-    text-align: center;
-    background-color: #EBF9FF;
-    justify-content: space-around;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
 }
 
 .custom-loss-icon {
-  width: 250px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -95,22 +106,35 @@
 }
 
 .flex-div {
-  width: 100%;
   display: flex;
   text-align: center;
   align-items: center;
+  padding: 20px 40px;
   justify-content: space-between;
+  height: 7em;
   background-color: #EBF9FF;
 }
 
 .client-profile {
-  padding: 20px;
+  /* padding: 20px; */
   text-align: left;
   align-items: center;
 }
 
 .client-details {
   font-size: small;
+}
+
+.profile-name{
+  margin: 0;
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  display: flex;
+  /* align-items: center; */
+  color: #214167;
 }
 
 .icon-para {
@@ -133,7 +157,7 @@
 /***************************** DOWNLOAD NAV BAR **************************/
 
 .download-nav {
-  width: 100%;
+  /* width: 100%; */
   margin: 20px 0;
   padding: 10px;
   display: flex;
@@ -172,11 +196,13 @@
 .table-one {
   width: 100%;
   background-color: #fff;
+  padding: 20px 40px;
 }
 
 .table-two {
   width: 100%;
   background-color: #fff;
+  padding: 20px 40px;
 }
 
 
@@ -202,16 +228,27 @@
   border-collapse: collapse;
   font-weight: medium;
   color: #E48952;
+  padding: 0 0px 30px 0px;
+  font-size: 12px;
 }
+
+.status-data{
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
 
 .yellow-button {
   border-collapse: collapse;
-  background-color: #fff;
-  border: 1px solid #E1A60D;
-  font-weight: medium;
-  border-radius: 8px;
-  padding: 10px;
-  color: #E1A60D;
+    background-color: #fff;
+    border: 1px solid #E1A60D;
+    font-weight: medium;
+    border-radius: 8px;
+    padding: 7px 12px;
+    font-size: 12px;
+    color: #E1A60D;
+    margin: 0;
 }
 
 .blue-button {
@@ -296,6 +333,7 @@
 }
 .side-icons {
   margin-right: 10px;
+  width: 14px;
 }
 .terms-container {
   display: grid;
@@ -310,11 +348,13 @@ ul .grey-text::marker {
 .terms-nav-content {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .terms-content {
   /* margin: 0 100px; */
+  padding: 20px 40px;
+  background-color: #f8f8f8;
 }
 
 p > b {
@@ -400,4 +440,101 @@ p > b {
     margin: 0;
   }
   
+}
+
+
+@media (min-width: 1024px) {
+  .terms-nav-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-family: Public Sans;
+    letter-spacing: -0.1px;
+    color: #9A9EA7;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    border-right: 1px solid #E4E6E8;
+    height: 100%;
+    height: 100vh;
+    background-color: #fff;
+  }
+
+.side-nav-icons {
+  font-size: 14px;
+  display: flex;
+  font-weight: 600;
+  justify-content: left;
+  /* font-family: Public sans-serif; */
+  margin: 5px 0px;
+}
+
+.subs {
+  font-family: 'Public Sans';
+}
+
+.side-icons {
+  margin-right: 10px;
+  width: 14px;
+}
+}
+
+
+.policy-card{
+  background: #FFFFFF;
+  box-shadow: 0px 12px 24px rgb(196 196 196 / 5%);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.flex-card-policy{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-policy{
+  display: flex;
+}
+
+.policy-card-p{
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #2E2C34;
+  margin: 5px 0 0 0;
+}
+
+.cover-marg{
+  margin: 25px 0px;
+}
+
+.active-button{
+  background: #1BD2A4;
+  border-radius: 10px;
+  color: #fff;
+  border: 0;
+  padding: 0px 20px;
+  margin-left: 20px;
+}
+
+.word-card{
+  width: 100%;
+  margin-left: 20px;
+}
+
+.img-policy-card{
+  width: 2em;
+  height: 2em;
+}
+
+.policy-card-h4{
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 5px 0 0 0;
+  /* line-height: 26px; */
+  color: #0E1525;
 }

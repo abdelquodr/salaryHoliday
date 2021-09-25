@@ -4,7 +4,7 @@ import { theme } from "../GlobalStyle";
 export const Button = styled.button`
     background-color: #FF7139;
     padding: 8px 15px;
-    background-color: ${({BgColor}) => BgColor ? BgColor : theme.color.range };
+    background-color: ${({BgColor}) => BgColor ? BgColor : theme.color.orange };
     color:  ${ theme.color.white } ;
     border-radius: 5px;
     font-size: 12px;

@@ -9,7 +9,7 @@ import Home from './pages/Home';
 import About from './pages/About'
 import Contact from './pages/Contact';
 import Faq from './pages/faq'
-import ClaimHistory from './pages/ClaimHistory';
+import Dashboard from './pages/Dashboard';
 import Claim from './pages/Claim'
 import Jobloss from './pages/LossJob';
 import Car from './pages/Car';
@@ -31,7 +31,7 @@ function App(props) {
         <Route exact path='/car-insurance' component={ Car }></Route>
         <Route exact path='/travel-insurance' component={ Travel }></Route>
         <Route exact path='/product-purchase' component={ ProductPurchase }></Route>
-        <Route exact path='/dashboard' component={ ClaimHistory }></Route>
+        <Route exact path='/dashboard' component={ Dashboard }></Route>
       </Switch>
     </Router>
     
