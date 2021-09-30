@@ -11,6 +11,9 @@ import globe from '../assets/icons/globe.png'
 import HowItWorks from '../layouts/HowItWork'
 import car from '../assets/icons/Group 1000002073 (2).png'
 import smallCar from '../assets/icons/Icon (1).png'
+import checked from '../assets/icons/Icon (1)(copy 1).png'
+import MakeAClaim from '../layouts/MakeAClaim'
+
 
 const Car = (props) => {
 
@@ -18,10 +21,16 @@ const Car = (props) => {
         window.scrollTo(0, 0);
       }, [props.location]);
 
+    //   handler
+    const handleData = () => {}
+
+    const handleSubmit = () => {}
+
+
     return (
         <React.Fragment>
             <Navbar />
-            <div className='loss-jumbo-container' style={{backgroundColor: '#FFF0E8'}}> 
+            <div className='loss-jumbo-container car-bcg' style={{backgroundColor: '#FFF0E8'}}> 
                 <div>
                     <p className='paragraph' style={{color: '#0E1525', fontWeight: 'bold'}}><img className='small-shield-img' src={smallCar} /> Car Insurance</p>
                     <h3 className='loss-header'>Get <span style={{fontWeight: 'bold'}}>Car Insurance </span>that works</h3>
@@ -34,47 +43,82 @@ const Car = (props) => {
 
             {/* ============= JOB Loss Calaculator =================== */}
             <div class='section cal-section'>
-                <div className='flex-out'>
-                    <div className='calculator-div'>
-                        <h4 className='paragraph align-center loss-para' style={{fontWeight: 'bold'}}> Job loss Calculator</h4>
-                        <div>
-                            <p className='paragraph loss-para' style={{fontSize: '11px'}}>what's your employment status</p>
-                            <div className='input-container'>
-                                <input placeholder='Self Employed' />
-                                <input placeholder='Employed' />
-                            </div>
-                            <div className='input-container'>
-                                <input placeholder='what is your monthly income' />
-                            </div>
-                            <div className='input-container'>
-                                <input placeholder='what is the name your company' />
-                            </div>
-                            <div className='input-container' >
-                                <input placeholder='DD' />
-                                <input placeholder='MM' />
-                                <input placeholder='YYYY' />
-                            </div>    
-                            <button className='claim-button'>View Premium Breakdown</button>
-                        </div>
-                    </div>
-                </div>
-                <div className='flex-out'>
-                    <h4 className='claim-header align-left' >
-                        Get a Premium Package that Suit You
-                    </h4>
-                    <p className='paragraph loss-para'>
-                        Get covered minutes. View your document manage your
-                        details and chat to us all on your phone. We're here 
-                        whenever you need us with 24/7 live chat. and 1 minute response time
-                    </p>
+            <div className='flex-out'>
+                <div className='calculator-div'>
+                    <h4 className='paragraph align-center loss-para text-bold' style={{fontWeight: 'bold'}}> Car Insurance Calculator</h4>
                     <div>
-                        <p className='paragraph loss-para'>Satisfaction guaranteed</p>
-                        <p className='paragraph loss-para'>Fair pricing</p>
-                        <p className='paragraph loss-para'>Fast turnaround</p>
+                        {/* <p className='paragraph loss-para' style={{fontSize: '11px'}}>what's your employment status</p> */}
+                    
+                            <form onSubmit={handleSubmit} className=''>
+                            <small className='small'>what's your employment status </small>
+                            <div className='input-flex'>
+                                <div className='preview-input-container calculator-div-small-margin'>
+                                    <small style={{color: 'transparent'}} className='small'>nothing is here </small>
+                                    <input onChange={handleData} name='' value='Self Employed' type='text' required placeholder='' />
+                                </div>
+                                <div className='preview-input-container calculator-div-small-margin'>
+                                    <small style={{color: 'transparent'}} className='small'>nothing is here</small>
+                                    <input onChange={handleData} name='' value='Employed' type='text' required placeholder='' />
+                                </div>
+                            </div>
+
+                            <div className='input-flex'>
+                                <div className='preview-input-container calculator-div-small-margin'>
+                                    <small className='small'>what's your monthly income?</small>
+                                    <input onChange={handleData} name='' required type='text' placeholder='NGN' />
+                                </div>
+                            </div>
+
+                            <div className='input-flex'>
+                                <div className='preview-input-container calculator-div-small-margin'>
+                                    <small className='small'>what's the name of your company?</small>
+                                    <input onChange={handleData} name='gender' type='text' required placeholder='' />
+                                </div>
+                            </div>
+
+                            <small className='small'>Tell us your date of birth</small>
+                            <div className='input-flex'>
+                            
+                                <div className='preview-input-container calculator-div-small-margin'>
+                                    <small style={{color: 'transparent'}} className='small'>nothing</small>
+                                    <input onChange={handleData} name='' type='text' required placeholder='DD' />
+                                </div>
+                    
+                                <div className='preview-input-container calculator-div-small-margin'>
+                                    <small style={{color: 'transparent'}} className='small'>nothing</small>
+                                    <input onChange={handleData} name='place_of_work' type='text' required placeholder='MM' />
+                                </div>
+
+                                <div className='preview-input-container calculator-div-small-margin'>
+                                    <small style={{color: 'transparent'}} className='small'>nothing</small>
+                                    <input onChange={handleData} name='place_of_work' type='text' required placeholder='YYYY' />
+                                </div>
+                            </div>
+
+                            <button className='claim-button'>View Premium Breakdown</button>
+                        </form>
+                        
                     </div>
-                   
                 </div>
             </div>
+
+            <div className='flex-out'>
+                <h4 className='claim-header align-left' >
+                    Get a Premium Package that Suit You
+                </h4>
+                <p className='paragraph loss-para'>
+                    Get covered minutes. View your document manage your
+                    details and chat to us all on your phone. We're here 
+                    whenever you need us with 24/7 live chat. and 1 minute response time
+                </p>
+                <div>
+                    <p className='paragraph loss-para'><img src={checked} alt='checked' style={{ verticalAlign: 'top'}} /> Satisfaction guaranteed</p>
+                    <p className='paragraph loss-para'><img src={checked} alt='checked' style={{ verticalAlign: 'top'}} /> Fair pricing</p>
+                    <p className='paragraph loss-para'><img src={checked} alt='checked' style={{ verticalAlign: 'top'}} /> Fast turnaround</p>
+                </div>
+                
+            </div>
+        </div>
 
             <HowItWorks />
 
@@ -114,41 +158,7 @@ const Car = (props) => {
               </div>
             </div>
 
-            <div className='section cal-section'>
-                {/* <div> */}
-                    <div className='claim-make'>
-                        <h4 className='claim-header pad-600'>Make a Claim</h4>
-                        <p className='paragraph loss-para'>Accidents happen which is why we are here to help you. our team is available 24/7 to resolve you claim as quickly aspossible</p>
-                        <div style={{display:'flex'}}>
-                            <span className='circle-num'>1</span> 
-                            <div>
-                                <h4 className='loss-head'>Fill Claim Form</h4>
-                                <p className='paragraph loss-para'>Provide enough details and tell us exactly what happened.  </p>
-                            </div>
-                        </div>
-
-                        <div style={{display:'flex'}}>
-                            <span className='circle-num'>2</span> 
-                            <div>
-                                <h4 className='loss-head'>Upload Termination Letter</h4> 
-                                <p className='paragraph loss-para'>Make sure you upload the proof of job termination  </p>
-                            </div>
-                        </div>
-
-                        <div style={{display:'flex'}}>
-                            <span className='circle-num'>3</span> 
-                            <div>
-                                <h4 className='loss-head'>Get Cashback</h4>
-                                <p className='paragraph loss-para'>As soon as we review your application, you will review your insurance payment </p>
-                            </div> 
-                        </div>
-                        <button className='claim-button reset'>make A Claim</button>
-                    </div>
-                    <div className='approve-img-div'>
-                        <img className='woman-img resize-600 increase-1024' src={approve} alt='approve' />
-                    </div>
-                {/* </div> */}
-            </div>
+            <MakeAClaim />
             <FagQuestion className='lightgreen' />
             <Footer />
         </React.Fragment>    

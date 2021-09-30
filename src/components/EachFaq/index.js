@@ -1,10 +1,14 @@
 import React from "react";
+import arrowSign from '../../assets/icons/Vector(copy).png'
 
 const EachFaq = ({ header, paragraph}) => {
     return (
         <div className='accordion_wrap'>
             <details>  
-                <summary className='accordion_h4'>{header}</summary>  
+                <summary style={{display: 'flex', justifyContent: 'space-between'}} className='accordion_h4'>
+                     <span>{header}</span>  
+                     <img width='20px' height='10px' style={{margin: 'auto 0'}} src={arrowSign} alt='arrow sign' />
+                </summary>  
                 <p className='paragraph accordion_para align-left'>{paragraph}</p>  
             </details>
         </div>
@@ -12,4 +16,4 @@ const EachFaq = ({ header, paragraph}) => {
 }
 
 
-export default EachFaq
+export default EachFaq  

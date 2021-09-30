@@ -38,7 +38,7 @@ const Claim = () => {
                     <CustomButton children='Make A Claim' />
                 </div>
                 <div className='job-loss-img-div'>
-                    <img className='job-loss-img claim-img' src={successful} alt='succesful' />
+                    <img  style={{display: 'block'}} className='job-loss-img claim-img' src={successful} alt='succesful' />
                 </div>
             </div>
 

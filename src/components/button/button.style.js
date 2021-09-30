@@ -24,6 +24,10 @@ export const Button = styled.button`
         padding: 14px 14px;
         margin-top: 12px;
     }
+
+    @media(min-width: 1024px){
+        padding: 15px 60px;
+    }
  ;
 
 `

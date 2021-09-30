@@ -1,6 +1,5 @@
-import React from "react"
+import React, { useRef, useState } from "react"
 import  Footer from '../components/infoFooter'
-import Navbar from '../components/navbar'
 import NewLetter from "../layouts/newsLetter"
 import { theme } from "../components/GlobalStyle"
 import Shield from '../assets/images/shield.png'
@@ -12,16 +11,38 @@ import group from '../assets/icons/Group 281.svg'
 import group1 from '../assets/icons/Group.svg'
 import group2 from '../assets/icons/Group (1).svg'
 import group3 from '../assets/icons/Group 280.svg'
+import TopBar from "../layouts/TopBar"
+import { Waypoint } from "react-waypoint"
+import 'animate.css'
+
+
 
 const About = ( props ) => {
+    
+    // state
+    const popFromLeft = useRef()
+    const popFromRight = useRef()
 
     React.useEffect(() => {
         window.scrollTo(0, 0);
       }, [props.location]);
+
+
+    const handleLeftAnimation = (props) => {
+        console.log('ONEnter',  popFromLeft )
+        popFromLeft?.current?.classList?.add('animate__backInLeft')           
+    }
+
+    const handleRightAnimation = () => {
+        console.log('drag Right', props)
+        popFromRight?.current?.classList?.add('animate__backInRight')
+    }
+
+
     
     return (
         <React.Fragment>
-            <Navbar />
+            <TopBar />
             <div className='about_header'>
                 <div>
                     <h4 className='about_header__header'>We're on mission on making insurance products that works for you</h4> 
@@ -33,46 +54,49 @@ const About = ( props ) => {
             </div>
          
             <div className='about-contain'>
-                <div  className='sect about-section added-pad' style={{ backgroundColor: theme.color.deepBlue }}>
-                    <div>
-                        <img src={Shield} alt='shield' />
+                <Waypoint onEnter={handleLeftAnimation}>
+                    <div  className='sect about-section added-pad' style={{ backgroundColor: theme.color.deepBlue }}>
+                        <div>
+                            <img src={Shield} alt='shield' />
+                        </div>
+                        <h4 className='provide_header'>
+                            We provide products that cater for your today, while also <span style={{color: '#FF7139', opacity: '0.7', fontWeight: 'bold'}}>securing your tomorrow</span> 
+                        </h4>     
+                        <p className='animate__animated paragraph' ref={ popFromLeft }> 
+                            you can constantly access a range of innovative insurance products to protect your lived ones 
+                            in case of life eventualities. Life insurance is no longer tedious and mundane with our simple and easy-to-use solutions.
+                        </p>
                     </div>
-                    <h4 className='provide_header'>
-                        We provide products that cater for your today, while also <span style={{color: '#FF7139', opacity: '0.7', fontWeight: 'bold'}}>securing your tomorrow</span> 
-                    </h4>
-                    <p className='paragraph'> 
-                        you can constantly access a range of innovative insurance products to protect your lived ones 
-                        in case of life eventualities. Life insurance is no longer tedious and mundane with our simple and easy-to-use solutions.
-                    </p>
-                </div>
-                <div className='about-section'>
+                </Waypoint>
+                <div className='about-section '>
                    <img className='about-img' src={Values} alt='values' />
                 </div>
             </div>
 
 
             <div className='about-contain reverse'>
-                <div className='sect about-section added-pad' style={{ backgroundColor: theme.color.orange }}>
-                    <h6 className='about-values' >
-                        Our values take the lead
-                    </h6>
+                    <Waypoint onEnter={handleRightAnimation}  >
+                    <div className='animate__animated sect about-section added-pad' ref={ popFromRight } style={{ backgroundColor: theme.color.orange }}>
+                        <h6 className='about-values' >
+                            Our values take the lead
+                        </h6>
+                            <div>
+                                <h6 className='bold_header'>Be bold</h6>
+                                <p className='paragraph'> we challenge the reimagine the status quo</p>      
+                            </div>
 
-                    <div>
-                        <h6 className='bold_header'>Be bold</h6>
-                        <p className='paragraph'> we challenge the reimagine the status quo</p>      
-                    </div>
+                            <div>
+                                <h6 className='bold_header'>Be Curious</h6>
+                                <p className='paragraph'> we use data and insight to continuously improve</p>      
+                            </div>
 
-                    <div>
-                        <h6 className='bold_header'>Be Curious</h6>
-                        <p className='paragraph'> we use data and insight to continuously improve</p>      
+                            <div>
+                                <h6 className='bold_header'>Build to delight </h6>
+                                <p className='paragraph'> we never settle and strive to go beyond the expected</p>      
+                            </div>                   
                     </div>
+                </Waypoint> 
 
-                    <div>
-                        <h6 className='bold_header'>Build to delight </h6>
-                        <p className='paragraph'> we never settle and strive to go beyond the expected</p>      
-                    </div>
-                   
-                </div>
                 <div className='about-section'>
                     <img className='about-img' src={secure} alt='secure' />
                 </div>
@@ -104,12 +128,22 @@ const About = ( props ) => {
                     <div className='let_talk__info'>
                         <ul style={{ listStyle: 'none', padding:'0' }}>
                             <li>
-                                <p style={{fontWeight: '400'}}>info@salaryholiday@gmail.com</p>
-                                <p><small>support Email - Reach out to us</small></p>
+                                <div className='claim-feature' style={{display: 'flex'}}>
+                                    <span className='circle-num'>1</span> 
+                                    <div>
+                                        <p style={{fontWeight: '400'}}> info@salaryholiday@gmail.com</p>
+                                        <p><small>support Email - Reach out to us</small></p>
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <p style={{fontWeight: '400'}}>0803726616251, 090261535141</p>
-                                <p> <small>contact phone number - Let's talk</small></p>
+                                <div className='claim-feature' style={{display: 'flex'}}>
+                                    <span className='circle-num'>2</span> 
+                                    <div>
+                                        <p style={{fontWeight: '400'}}> 0803726616251, 090261535141</p>
+                                        <p> <small>contact phone number - Let's talk</small></p>
+                                    </div> 
+                                </div>       
                             </li>
                         </ul>
                     </div>

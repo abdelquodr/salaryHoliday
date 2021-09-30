@@ -16,10 +16,29 @@
 
 .purchase-list > li{
     word-break: keep-all;
-    font-size: 14px;
     padding: 0px 20px;
-    /* overflow: hidden; */
-    /* margin: 0 20px; */
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    color: rgba(14, 21, 37, 0.3);    
+}
+
+.purchase-list > li > span {
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    color: rgba(14, 21, 37, 0.3);
+    vertical-align: top;
+}
+
+.sm-shield{
+    vertical-align: bottom;
 }
 
 .preview-header{
@@ -139,7 +158,7 @@
 }
 
 .form-container{
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 .preview-input-container{
@@ -150,6 +169,11 @@
     margin: 20px 0px;
     padding: 0px 20px;
 }
+
+.calculator-div-small-margin {
+    margin: 10px 0;
+  }
+
 
 .preview-input-container > input, 
 .preview-input-container > select{
@@ -195,10 +219,11 @@ select:focus, input:focus{
     box-shadow: 7.68831px 15px 30px rgb(26 34 56 / 8%);
     border-radius: 10px;
     margin: 20px auto;
-    position: absolute;
-    top: -3em;
-    z-index: 1;
-    left: 4em;
+    margin-bottom: -50px;
+    position: sticky;
+    /* top: -3em; */
+    z-index: 99;
+    /* left: 4em; */
 }
 
 .visa-img{
@@ -337,16 +362,24 @@ select:focus, input:focus{
     }
 
     .purchase-list {
-        list-style: none;
-        display: flex;
-        overflow-x: scroll;
-        justify-content: center;
-        padding: 0;
-        border-bottom: 1px solid #E2E4EA;
-        width: auto;
-        margin: 18px auto;
-        text-align: center;
+            list-style: none;
+            display: flex;
+            overflow-x: scroll;
+            justify-content: center;
+            padding: 0;
+            border-bottom: 1px solid #E2E4EA;
+            width: auto;
+            margin: 18px auto;
+            text-align: center;
+            font-family: Public Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 19px;
+            letter-spacing: -0.01em;
+            color: rgba(14, 21, 37, 0.3);
     }
+
 
     .cover-card{
         width: 90%;
@@ -403,7 +436,7 @@ select:focus, input:focus{
     }
 
     html, body{
-        background-color: #f8f8f8;
+        /* background-color: #f8f8f8; */
         padding: 0;
         margin: 0;
     }

@@ -31,14 +31,11 @@ export const Container = styled.div`
 `;
 
 export const ListItem = styled.ul`
-        // flex-direction: row;
-        // display: none;
-        // list-style: none;
-        // padding: 0 15px;
+    padding: 0;
     
 
     @media (min-width: 376px){
-        display: none;
+        // display: none;
         flex-direction: column;
         list-style: none; 
     }
@@ -57,7 +54,8 @@ export const ListItem = styled.ul`
         flex-direction: row;
         position: inherit;
         border: 0;
-        box-shadow: transparent
+        box-shadow: transparent;
+        // padding-top: 8px;
     }
  
 `;
@@ -66,20 +64,29 @@ export const Item = styled.li`
     font-family:  ${({ font }) => font };
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 17px;
     display: flex;
     margin: 0;
-    padding: 0;
-    cursor: pointer
+    // padding: 8px 20px;
+    cursor: pointer;
     color: ${ theme.color.black };
+
+    @media(min-width: 1024px){
+
+    }
 `
 
 export const NavbarIcon = styled.div`
     width: 15px;
     height: 15px;
-    background-color: ${ theme.color.lightOrange };
+    background-color: #E48952;
     margin: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+
 
     @media (min-width: 376px){
         display: block

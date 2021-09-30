@@ -44,8 +44,6 @@
     
   }
 
-
-
   .about-section{
     
   }
@@ -99,7 +97,7 @@
 
   .faq-section{
     background-color: #F1FCFF;
-    padding: 100px 40px;
+    padding: 100px 20px;
     margin-top: 40px;
   }
 
@@ -126,6 +124,7 @@
   .let_talk{
     font-size: 24px;
     font-weight: bold;
+    margin-top: 0
   }
 
   .let_talk__info{
@@ -137,32 +136,39 @@
     font-weight: lighter;
   }
 
+  
   .trusted {
+    margin-top: 0;
     font-size: 15px;
     text-align: center;
     font-weight: normal;
   }
 
   .mobile-navigation{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        margin: 0;
-        top: 2em;
-        padding: 10px 0;
-        flex-direction: column;
-        box-shadow: 0px 12px 16px -4px #f8f8f8;
-        border: 1px solid #f8f8f8;
-        position: absolute;
-        top: 4em;
-        left: 50%;
-        background: #fff;
-        border-radius: 6px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: none;
+    margin: 0;
+    padding: 10px 0;
+    flex-direction: column;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 4em;
+    left: 50%;
+    background: #fff;
+    z-index: 1;
+    border-radius: 6px;
+    box-shadow: 0px 12px 16px -4px rgb(16 24 40 / 10%), 0px 4px 6px -2px rgb(16 24 40 / 5%);
+  }
+
+  .hassle-free{
+    padding: 20px 0px;
+  }
+
+  .added-nav-pad{
+    padding: 5px 22px;
   }
 
   .contact__container{
@@ -516,6 +522,7 @@
   .newsletter-container{
     padding: 40px 0;
     font-family: Public sans;
+    padding-top: 0;
   }
 
   .newsletter-head {
@@ -556,7 +563,12 @@
     color: black;
     line-height: 20px;
     color: #0E1525;
-    font-weight: normal
+    font-weight: normal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    opacity: 0.7;
   }
 
   .jumbotron-text{
@@ -578,8 +590,12 @@
   }
 
   .jumbotron-para{
+    color: #0E1525;
+    font-style: normal;
+    font-weight: normal;
     font-size: 12px;
-    line-Height: 18px;
+    line-height: 18px;
+    opacity: 0.7;
   }
 
   .faq{
@@ -948,6 +964,7 @@
       font-size: 25px;
       margin: 0;
       color: black;
+      font-size: 24px;
     }
 
     .newsletter-text{
@@ -976,6 +993,11 @@
 
 
   @media (min-width: 414px) {
+  
+    .mobile-navigation{
+      display: none;
+      left: 60%;
+    }
   
     .jumbotron-text{
       font-size: 13px;
@@ -1034,6 +1056,11 @@
 
 @media (min-width: 600px) {
 
+  .mobile-navigation {
+    display: none;
+    left: 70%;
+  }
+
   .about_header__header{
     padding: 0 100px;
   }
@@ -1041,6 +1068,14 @@
   .aboutheader-para{
     color:#05101D;
     padding: 0px 60px; 
+  }
+
+  .faq-section{
+    padding: 100px 40px;
+  }
+
+  .hassle-free{
+    padding-top: 60px;
   }
 
   .sect{
@@ -1060,6 +1095,12 @@
 
   .reverse{
     flex-direction: row-reverse;
+  }
+
+  .newsletter-container {
+    padding: 40px 0;
+    font-family: Public sans;
+    padding-top: 40px;
   }
 
   .add-padding{
@@ -1270,6 +1311,17 @@
     font-size: 13px;
   }
 
+  .mobile-navigation {
+    display: none;
+    left: 77%;
+  }
+
+  .hassle-free{
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+
+
   .jumbotron-para{
     padding: 20px 0
   }
@@ -1400,6 +1452,9 @@
     margin-left: -60px;
   }
 
+  .added-nav-pad{
+    padding: 0px;
+  }
 
   .jumbo_image{
     display: block;
@@ -1411,6 +1466,11 @@
 
   .contact__container > p {
     padding: 0 300px;
+  }
+
+  .mobile-navigation{
+    display: contents !important;
+    position: inherit;
   }
 
   .jumbo_image > img {
@@ -1492,7 +1552,7 @@
   }
 
   .reset{
-    width: 60%
+    width: 100%;
   }
 
   .flex-out{
@@ -1563,7 +1623,8 @@
   .calculator-div{
     flex-basis: 100%;
     /* margin: auto; */
-    width: 20rem; 
+    width: 23rem;
+    padding: 40px;
   }
   
 
@@ -1599,7 +1660,12 @@
 
   .loss-para{
     width: 100%;
+  }
+
+  .text-bold{
+    font-size: 24px;
     padding-bottom: 20px;
+    margin: 0;
   }
 
   .margin-600{
@@ -1675,6 +1741,10 @@
     font-size: 48px;
     padding-bottom: 18px;
   }
+  
+  .newsletter-input{
+    padding: 14px 15px;
+  }
 
   .hassle-free{
     padding: 60px 0px 0px 0px;
@@ -1686,6 +1756,10 @@
 
   .contain-card{
     padding: 0;
+  }
+
+  .set-1024{
+    margin: 6px 0px 15px 0px;
   }
 
   .footer{
@@ -1722,7 +1796,15 @@
     display: none;
   }
 
-  .loss-jumbo-container{
+  .job-loss-img-div{
+    flex: 1 1 0;
+  }
+
+  .reset{
+    width: 90%;
+  }
+
+  .car-bcg{
     padding: 40px 80px 0px 80px;
     gap: 100px;
     background-image: url('/src/assets/icons/Mask\ Group.png');
@@ -1730,15 +1812,20 @@
   }
 
   .jobloss-bcg{
+    height: 30rem;
     background-image: url('/src/assets/icons/Mask Group(copy).png');
   }
 
   .travel-bcg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
     background-image: url('/src/assets/icons/Mask Group(copy 1).png');
   }
 
   .claim-bcg{
-    background-image: url('/src/assets/icons/Mask Group(copy 2).png');
+    height: 30rem;
+    /* background-image: url('/src/assets/icons/Mask Group(copy 2).png'); */
   }
 
   .one-of-equal{

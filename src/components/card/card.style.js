@@ -45,6 +45,10 @@ export const Card = styled.div`
         /* display: flex;  */
        justify-content: space-between;
     }
+
+    @media( min-width:1024px){
+        display: flex
+    }
 `
 
 export const Icon = styled.img`
